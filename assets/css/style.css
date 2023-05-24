@@ -1,10 +1,3 @@
-/**
-* Template Name: NiceAdmin - v2.5.0
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -14,8 +7,9 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
+  background: #FFF;
+  /* color: #444444; */
+  color:#031128;
 }
 
 a {
@@ -35,6 +29,8 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 990;
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +72,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  /* background: #4154f1; */
+  background: #FFA500;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -90,7 +87,8 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  /* background: #6776f4; */
+  background: #FFA500;
   color: #fff;
 }
 
@@ -98,6 +96,339 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
+
+/*--------------------------------------------------------------
+# Heading & Content stylings
+--------------------------------------------------------------*/
+/* headers, paragraphs, bullet points */
+.col-para {
+	font-size: 13.5px;
+	font-family: "Nunito", sans-serif;
+  color:#031128;
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.col-para-notes {
+	font-size: 12px;
+	font-family: "Nunito", sans-serif;
+  color:#031128;
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.col-sub-headings {
+	font-size: 17px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 700;
+  color:#031128;
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.col-sub-headings-sub {
+	font-size: 13px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+  color:#031128;
+	line-height: 1.3;
+	text-align: justify;
+  display: inline-flex;
+}
+
+.col-para-bulletpoints {
+	font-size: 13px;
+	font-family: "Nunito", sans-serif;
+  color:#031128;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.col-logo-top {
+   
+}
+
+.col-images-intro {
+    border-radius: 18px 1px 18px 1px;
+    width: auto;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(5px 5px 10px #3f4449);
+}
+
+.col-images-sessionmgmt {
+    border-radius: 18px 1px 18px 1px;
+    width: 850px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(5px 5px 10px #3f4449);
+}
+
+
+.col-images-ui {
+    border-radius: 80px 20px 80px 20px;
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(7px 7px 3px #3f4449);
+}
+
+.col-images-pf {
+    border-radius: 30px 8px 30px 8px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(7px 7px 3px #3f4449);
+}
+
+.col-images-texts {
+   border-radius: 30px 8px 30px 8px;
+   width: 600px;
+   height: 25px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-bottom: solid 2px #68b8eb;
+   border-left: solid 2px #68b8eb;
+   border-top: solid 2px #23f346fc;
+   border-right: solid 2px #23f346fc;
+}
+
+.col-images-texts-startstop {
+   border-radius: 30px 8px 30px 8px;
+   width: 600px;
+   height: 60px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;   
+}
+
+.col-folder-structure {
+   border-radius: 80px 20px 80px 20px;
+   width: auto;
+   height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.div-table {
+  display: table;         
+  width: auto;         
+  background-color: #183a50;
+  border-spacing: 20px; /* cellspacing:poor IE support for  this */
+  text-align: justify;
+  border-radius: 50px 20px 65px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 4px #23f346fc;
+  border-left: solid 4px #23f346fc;
+}
+
+.div-table-row {
+  display: table-row;
+  width: auto;
+
+}
+
+.div-table-col1 {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 150px;         
+  align:left;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 990;
+  color: #fff;
+  text-align: left;
+}
+.div-table-col2 {
+  float: right; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 400px; 
+  align:right;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: justify;
+}
+
+.div-table2 {
+  display: table;         
+  width: auto;         
+  background-color: #183a50;
+  border-spacing: 20px; /* cellspacing:poor IE support for  this */
+  text-align: justify;
+  border-radius: 20px 8px 20px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 4px #23f346fc;
+  border-left: solid 4px #23f346fc;
+}
+
+.div-table2-row {
+  display: table-row;
+  width: auto;
+
+}
+
+.div-table2-col1 {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 150px;         
+  align:left;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 990;
+  color: #fff;
+  text-align: left;
+}
+
+.div-table2-col1-sub {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 150px;         
+  align:left;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+}
+
+.div-table2-col2 {
+  float: right; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 400px; 
+  align:right;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: justify;
+}
+
+
+.div-table3 {
+  display: table;         
+         
+  background-color: #b3cee8;
+  border-spacing: 20px; /* cellspacing:poor IE support for  this */
+  text-align: justify;
+  border-radius: 10px 5px 10px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 2px #6082B6;
+  border-left: solid 2px #6082B6;
+
+}
+
+.div-table3-row {
+  display: table-row;
+  width: auto;
+
+}
+
+.div-table3-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;      
+  width: 510px;
+  align:left;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  /* color: #35383a; */
+  color:#181E26;
+  text-align: center-left;
+  
+}
+.div-tables3 {
+  display: table;                
+  background-color: #b3cee8;
+  border-spacing: 10px; 
+  /* cellspacing:poor IE support for  this */
+  text-align: justify;
+  border-radius: 10px 5px 10px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 2px #6082B6;
+  border-left: solid 2px #6082B6;
+
+}
+.div-table3-row1 {
+  display: table;
+  width:200px;
+}
+
+.div-table4 {
+  display: table;         
+  width: 650px;         
+  background-color: #b3cee8;
+  border-spacing: 20px; /* cellspacing:poor IE support for  this */
+  text-align: justify;
+  border-radius: 20px 10px 20px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 3px #183a50;
+  border-left: solid 3px #183a50;
+}
+
+.div-table4-row {
+  display: table-row;
+  width: auto;
+
+}
+
+.div-table4-col1 {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 150px;         
+  align:left;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 990;
+  color: #35383a;
+  text-align: left;
+}
+.div-table4-col2 {
+  float: right; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 400px; 
+  align:right;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #35383a;
+  text-align: justify;
+}
+.systemrequiremetable td{
+  border: 1px solid #aad7e9;
+  font-size: 13.5px;
+    font-family: "Nunito", sans-serif;
+    color: #031128;
+    line-height: 1.7;
+    text-align: justify;
+    list-style-type: circle;
+    max-width: 600px;
+}
+.symcomponent {
+  border: 1px solid #aad7e9;
+  background-color: #aad7e9;
+}
+ 
+
+
+
 
 /*--------------------------------------------------------------
 # Override some default Bootstrap stylings
@@ -380,9 +711,10 @@ h6 {
   }
 }
 
-.logo img {
-  max-height: 26px;
-  margin-right: 6px;
+.logo img { 
+  width: 17%;
+  height: 10%;
+  padding-left: 5px;
 }
 
 .logo span {
@@ -391,7 +723,6 @@ h6 {
   color: #012970;
   font-family: "Nunito", sans-serif;
 }
-
 .header {
   transition: all 0.5s;
   z-index: 997;
@@ -642,7 +973,8 @@ h6 {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #aab7cf;
+  /* background-color: #aab7cf; */
+  background-color: 	#B6D0E2;
 }
 
 @media (min-width: 1200px) {
@@ -699,7 +1031,7 @@ h6 {
   display: flex;
   align-items: center;
   font-size: 15px;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #4154f1;
   transition: 0.3;
   background: #f6f9ff;
@@ -749,8 +1081,8 @@ h6 {
 .sidebar-nav .nav-content a {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  /* font-weight: 600; */
   color: #012970;
   transition: 0.3;
   padding: 10px 0 10px 40px;

@@ -1,1532 +1,2249 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		<title>EIK Integration Kit 2.0.3.2</title>
-		<meta content="" name="description">
-		<meta content="" name="keywords">
+  <title>Authenion - Help Center</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-		<!-- Favicons -->
-		<link href="assets/img/authenion-box-hd.png" rel="icon">
-		<link href="assets/logo.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="assets/img/authenion-box-hd.png" rel="icon">
+  <link href="assets/logo.png" rel="apple-touch-icon">
 
-		<!-- Google Fonts -->
-		<link href="https://fonts.gstatic.com" rel="preconnect">
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-			rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-		<!-- Vendor CSS Files -->
-		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-			rel="stylesheet">
-		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-		<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-		<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-		<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
-		<!-- Template Main CSS File -->
-		<link href="assets/css/style.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-		<!-- =======================================================
+  <!-- =======================================================
   * Template Name: authenion - v2.5.0
   * Template URL: https://bootstrapmade.com/authenion-bootstrap-admin-html-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<!-- ======= Header ======= -->
-		<header id="header" class="header fixed-top d-flex align-items-center">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
 
-			<div class="d-flex align-items-center justify-content-between">
-				<a href="index.html" class="logo d-flex align-items-center">
-					<img src="assets/img/likeminds-logo.png" alt=""
-						class="col-logo-top">
-					<img src="assets/img/authenion-logo-text.png" style="width:55%;" alt=""
-						class="col-logo-top">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/authenion-box-hd.png" alt="" class="col-logo-top">
+        <img src="assets/img/authenion-logo-text.png" style="width:55%;" alt="" class="col-logo-top">
+        
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
 
-				</a>
-				<i class="bi bi-list toggle-sidebar-btn"></i>
-			</div><!-- End Logo -->
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
 
-			<div class="search-bar">
-				<form class="search-form d-flex align-items-center" method="POST"
-					action="#">
-					<input type="text" name="query" placeholder="Search" title="Enter search
-						keyword">
-					<button type="submit" title="Search"><i class="bi bi-search"></i></button>
-				</form>
-			</div><!-- End Search Bar -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
 
-			<nav class="header-nav ms-auto">
-				<ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+	      
+	      
+	      <div class="nav">
+		<a class="bi bi-circle"></a>
+		      </div>
+	      <div class= "bi bi-circle" id="tables-nav">
+		Configuration Guide
+	</div>
 
-					<li class="nav-item d-block d-lg-none">
-						<a class="nav-link nav-icon search-bar-toggle " href="#">
-							<i class="bi bi-search"></i>
-						</a>
-					</li><!-- End Search Icon-->
+        
+        <li class="nav-item dropdown">
 
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class=></i>
+            <span class=></span>
+          </a><!-- End Messages Icon -->
 
-					<div class="nav">
-						<a class="bi bi-circle"></a>
-					</div>
-					<div class="bi bi-circle" id="tables-nav">
-						Deployment Guide
-					</div>
-
-
-					<li class="nav-item dropdown">
-
-						<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-							<i class=></i>
-							<span class=></span>
-						</a><!-- End Messages Icon -->
-
-						<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-							<!--<li class="dropdown-header">
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <!--<li class="dropdown-header">
               You have 3 new messages
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li> -->
-							<li>
-								<hr class="dropdown-divider">
-							</li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-							<li class="message-item">
-								<a href="#">
-									<img src= alt="" class="rounded-circle">
+            <li class="message-item">
+              <a href="#">
+                <img src= alt="" class="rounded-circle">
+               
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-								</div>
-							</a>
-						</li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
+           
+        <li class="nav-item dropdown pe-3">
 
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/logo.png" alt="img" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+          </a><!-- End Profile Iamge Icon -->
 
-						<li class="nav-item dropdown pe-3">
+         
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-							<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
-								data-bs-toggle="dropdown">
-								<img src="assets/logo.png" alt="img" class="rounded-circle">
-								<span class="d-none d-md-block dropdown-toggle ps-2"></span>
-							</a><!-- End Profile Iamge Icon -->
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-							<li>
-								<hr class="dropdown-divider">
-							</li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
 
-							<li>
-								<a class="dropdown-item d-flex align-items-center"
-									href="users-profile.html">
-									<i class="bi bi-person"></i>
-									<span></span>
-								</a>
-							</li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span></span>
+              </a>
+            </li>
 
-							<li>
-								<a class="dropdown-item d-flex align-items-center"
-									href="users-profile.html">
-									<i class="bi bi-gear"></i>
-									<span></span>
-								</a>
-							</li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
 
-							<li>
-								<a class="dropdown-item d-flex align-items-center"
-									href="pages-faq.html">
-									<i class="bi bi-question-circle"></i>
-									<span></span>
-								</a>
-							</li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
+      </ul>
+    </nav><!-- End Icons Navigation -->
 
-							<li>
-								<a class="dropdown-item d-flex align-items-center" href="#">
-									<i class="bi bi-box-arrow-right"></i>
-									<span></span>
-								</a>
-							</li>
+  </header><!-- End Header -->
 
-						</ul><!-- End Profile Dropdown Items -->
-					</li><!-- End Profile Nav -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
 
-				</ul>
-			</nav><!-- End Icons Navigation -->
+    <ul class="sidebar-nav" id="sidebar-nav">
+     
 
-		</header><!-- End Header -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Release Notes</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
 
-		<!-- ======= Sidebar ======= -->
-		<aside id="sidebar" class="sidebar">
-
-			<ul class="sidebar-nav" id="sidebar-nav">
-
-
-				<li class="nav-item">
-					<a class="nav-link " href="index.html">
-						<i class="bi bi-circle"></i>
-						<span>The EBS Integration Kit</span>
-					</a>
-				</li><!-- End Dashboard Nav -->
-
-
-				<li class="nav-item">
-					<a class="nav-link collapsed" data-bs-target="#forms-nav"
-						data-bs-toggle="collapse" href="#">
-						<i class="bi bi-journal-text"></i><span>Getting Started</span><i class="bi
-							bi-chevron-down ms-auto"></i>
-					</a>
-					<ul id="forms-nav" class="nav-content collapse "
-						data-bs-parent="#sidebar-nav">
-
-						<li>
-							<a href="#Features">
-								<i class="bi bi-circle"></i><span>Features</span>
-							</a>
-						</li>
-						<li>
-							<a href="#Benefits">
-								<i class="bi bi-circle"></i><span>Benefits</span>
-							</a>
-						</li>
-						<li>
-							<a href="#System Requirements">
-								<i class="bi bi-circle"></i><span>System Requirements</span>
-							</a>
-						</li>
-						<li>
-							<a href="#Overview-of-the-flow">
-								<i class="bi bi-circle"></i><span>Overview of the SSO Flow</span>
-							</a>
-						</li>
-
-						<!--<li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span></span>
-            </a>
-          </li>-->
-					</ul>
-				</li><!-- End Forms Nav -->
-
-				<li class="nav-item">
-					<a class="nav-link collapsed" data-bs-target="#components-nav"
-						data-bs-toggle="collapse" href="#SystemRequirements">
-						<i class="bi bi-menu-button-wide"></i><span>PingFederate Configurations</span><i
-							class="bi bi-chevron-down ms-auto"></i>
-					</a>
-					<ul id="components-nav" class="nav-content collapse "
-						data-bs-parent="#sidebar-nav">
-						<li>
-							<a href="#configure-html">
-								<i class="bi bi-circle"></i><span>Configure HTML Form Adapter</span>
-							</a>
-						</li>
-						<li>
-							<a href="#oauth-side-configuration">
-								<i class="bi bi-circle"></i><span>OAuth Server side Configuration</span>
-							</a>
-						</li>
-						<li>
-							<a href="#authorization-server-settings">
-								<i class="bi bi-circle"></i><span>Authorization Server Settings</span>
-							</a>
-						</li>
-						<li>
-							<a href="#scope-management">
-								<i class="bi bi-circle"></i><span>Scope Management</span>
-							</a>
-						</li>
-						<li>
-							<a href="#idp-adapter-mapping">
-								<i class="bi bi-circle"></i><span>IdP Adapter Mappings</span>
-							</a>
-						</li>
-						<li>
-							<a href="#access-token-management">
-								<i class="bi bi-circle"></i><span>Access Token Management</span>
-							</a>
-						</li>
-						<li>
-							<a href="#access-token-mapping">
-								<i class="bi bi-circle"></i><span>Access Token Mapping</span>
-							</a>
-						</li>
-						<li>
-							<a href="#oidc-policy-management">
-								<i class="bi bi-circle"></i><span>OpenID Connect Policy Management</span>
-							</a>
-						</li>
+     
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Getting Started</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 		
-						<li>
-							<a href="#client-config-oauth">
-								<i class="bi bi-circle"></i><span>Client Configuration for OAuth Server</span>
-							</a>
-						</li>
-						<li>
-							<a href="#configure-ssl-cert">
-								<i class="bi bi-circle"></i><span>Configure SSL Server certificate</span>
-							</a>
-						</li>
-
-					</ul>
-				</li>
-				<!-- End Components Nav -->
-
-
-				<li class="nav-item">
-					<a class="nav-link collapsed" data-bs-target="#tables-nav"
-						data-bs-toggle="collapse" href="#">
-						<i class="bi bi-layout-text-window-reverse"></i><span>Deploying EIK in
-							PingFederate</span><i class="bi bi-chevron-down ms-auto"></i>
-					</a>
-					<ul id="tables-nav" class="nav-content collapse "
-						data-bs-parent="#sidebar-nav">
-						<li>
-							<a href="#create-ebsauth">
-								<i class="bi bi-circle"></i><span>Creating the "EBSAuth" Directory</span>
-							</a>
-						</li>
-						<li>
-							<a href="#setting-eik-home">
-								<i class="bi bi-circle"></i><span>Setting the "EIK_HOME" Environment
-									Variable</span>
-							</a>
-						</li>
-						<li>
-							<a href="#placing-license">
-								<i class="bi bi-circle"></i><span>Placing the License File</span>
-							</a>
-						</li>
-						<li>
-							<a href="#eik-auth-file-gen">
-								<i class="bi bi-circle"></i><span>EIKAuth Config File Generation</span>
-							</a>
-						</li>
-						<li>
-							<a href="#ebs-dbcs-creation">
-								<i class="bi bi-circle"></i><span>EBS DataSource (DBCX) File Creation</span>
-							</a>
-						</li>
-						<li>
-							<a href="#deploying-log4j2">
-								<i class="bi bi-circle"></i><span>Deploying the log4j2.xml File</span>
-							</a>
-						</li>
-						<li>
-							<a href="#deploying-cacerts">
-								<i class="bi bi-circle"></i><span>Deploying the cacerts File</span>
-							</a>
-						</li>
-						<li>
-							<a href="#deployong-security-properties">
-								<i class="bi bi-circle"></i><span>Deploying the security.properties File</span>
-							</a>
-						</li>
-						<li>
-							<a href="#deploying-ebsauth-war">
-								<i class="bi bi-circle"></i><span>Deploying EBSAuth.war Binary</span>
-							</a>
-						</li>
-
-					</ul>
-				</li><!-- End Tables Nav -->
-
-				<li class="nav-item">
-					<a class="nav-link collapsed" data-bs-target="#charts-nav"
-						data-bs-toggle="collapse" href="#">
-						<i class="bi bi-bar-chart"></i><span>System Profile Parameter changes in
-							EBS</span><i class="bi bi-chevron-down ms-auto"></i>
-					</a>
-					<ul id="charts-nav" class="nav-content collapse "
-						data-bs-parent="#sidebar-nav">
-						<li>
-							<a href="#system-profile-changes">
-								<i class="bi bi-circle"></i><span>System Profile Changes</span>
-							</a>
-						</li>
-					</ul>
-				
-				</li><!-- End Tables Nav -->
-				
-				
-				<li class="nav-item">
-					<a class="nav-link collapsed" data-bs-target="#forms-nav"
-						data-bs-toggle="collapse" href="#">
-						<i class="bi bi-journal-text"></i><span>Integrating The E-Business Integration Kit with Splunk Enterprise</span><i class="bi
-							bi-chevron-down ms-auto"></i>
-					</a>
-					<ul id="forms-nav" class="nav-content collapse "
-						data-bs-parent="#sidebar-nav">
-
-						<li>
-							<a href="#Overview">
-								<i class="bi bi-circle"></i><span>Overview</span>
-							</a>
-						</li>
-						<li>
-							<a href="#Features of Splunk">
-								<i class="bi bi-circle"></i><span>Features of Splunk</span>
-							</a>
-						</li>
-						<li>
-							<a href="#Installing the EIK app on Splunk
-							Enterprise"><i class="bi bi-circle"></i><span>Installing the EIK app on Splunk
-								Enterprise</span>
-							</a>
-						</li>
-						<li>
-							<a href="#Using the App">
-								<i class="bi bi-circle"></i><span>Using the App</span>
-							</a>
-						</li>
-
-						<!--<li>
+          <li>
+            <a href="#Introduction">
+              <i class="bi bi-circle"></i><span>Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Enterprise Deployement Model">
+              <i class="bi bi-circle"></i><span>Enterprise Deployment Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="#What can I do with Authenion">
+              <i class="bi bi-circle"></i><span>What can I do with Authenion?</span>
+            </a>
+          </li>
+          <li>
+            <a href="#How does Authenion work">
+              <i class="bi bi-circle"></i><span>How does Authenion work?</span>
+            </a>
+          </li> 
+          <li>
+            <a href="#What can I Configure with Authenion">
+              <i class="bi bi-circle"></i><span>What can I Configure with Authenion?</span>
+            </a>
+          </li>
+          <!--<li>
             <a href="forms-validation.html">
               <i class="bi bi-circle"></i><span></span>
             </a>
           </li>-->
-
-
-
-
-
-
-					
-			
-				<!-- End Charts Nav -->
-
-			<!--
-				<li class="nav-item">
-					<a class="nav-link collapsed" data-bs-target="#icons-nav"
-						data-bs-toggle="collapse" href="#">
-						<i class="bi bi-gem"></i><span>Configuring Log Monitoring With Splunk</span><i
-							class="bi bi-chevron-down ms-auto"></i>
-					</a>
-					<ul id="icons-nav" class="nav-content collapse "
-						data-bs-parent="#sidebar-nav">
-						<li>
-							<a href="#PingFederate as the Token Provider">
-								<i class="bi bi-circle"></i><span>PingFederate as the Token Provider</span>
-							</a>
-						</li>
-						<li>
-							<a href="#Microsoft Azure Active Directory as the Token Provider">
-								<i class="bi bi-circle"></i><span>Microsoft Azure Active Directory as
-									the Token Provider</span>
-							</a>
-						</li>
-
-					</ul>
-				</li> End Icons Nav -->  
-
-				<li class="nav-heading"></li>
-
-
-
-
-			</li><!-- End Blank Page Nav -->
-
-		</ul>
-
-	</aside><!-- End Sidebar-->
-
-
-	<main id="main" class="main">
-
-		<div class="pagetitle">
-			<h2><b><p style="font-size: 2.5rem;color: #031128">The EBS Integration Kit</p></b></h2>
-			<nav>
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html"></a></li>
-
-					<!--<li class="breadcrumb-item active"></li>-->
-				</ol>
-			</nav>
-		</div><!-- End Page Title -->
-
-		<section class="section dashboard">
-			<div class="row">
-
-				<!-- Left side columns -->
-				<div class="col-lg-8">
-					<div class="row">
-						<div>
-							<h4><p style="font-size: 0.9rem; color: #031128">Last modified :
-									<script>document.write(new Date().toLocaleDateString());</script> </p>
-							</h4>
-							<p class="col-para"> PingFederate as an Identity Federation product
-								includes adapters and integration kits that simplify
-								integrations with Identity Stores as well as Applications. The Oracle
-								EBS solution uses these capabilities
-								to enable Single Sign-On. The EBS INTEGRATION KIT (EIK) from LikeMinds
-								Consulting provides a simple
-								deployment path with PingFederate to enable single sign-on (SSO) to
-								Oracle E-Business Suite
-							</p> <br>
-
-							<!-- ### RELEASE NOTES ### -->
-							<h4><b>How does the EBS Integration Kit work?</b></h4>
-							<br>
-							<img src="assets/img/ebs-kit-how-does-it-work.png" alt=""
-								class="col-images-intro"/>
-							<br>
-							<br>
-
-							<p class="col-para">The EBS Integration Kit is a light-weight java
-								application which can be deployed in the PingFederate
-								jetty-container which eliminates the need for dedicated server/hardware.
-								The EIK is OpenID Connect
-								Compliant as a resource server and can be configured with PingFederate
-								to receive Authentication and
-								Authorization tokens. The EBS Integration Kit communicates with the
-								Oracle E-Business Suite Database
-								for Session creation and optional user-provisioning if required.</p>
-							<br>
-						</div>
-
-
-
-
-					</div>
-
-					<!-- ### GETTING STARTED ### -->
-					<div>
-						<h4><b>Getting Started</b></h4>
-						<p class="col-para">Features as of EIK 2.3.0.2 </p>
-						<a style="padding:32px" name="Features"></a>
-						<!-- ### FEATURES ### -->
-						<a style="padding:32px" name="Features"></a>
-						<p class="col-sub-headings"><b>1. Features</b></p>
-						<ul style="margin-left:30px;" class="col-para-bulletpoints">
-							<li><p class="col-para-bulletpoints">Works seamlessly with PingFederate.</p></li>
-							<li><p class="col-para-bulletpoints">Eliminated the need for additional
-									Oracle components like Oracle Internet Directory or EBS AccessGate.</p></li>
-							<li><p class="col-para-bulletpoints">Provides flexibility of Deployment
-									Methods: The EIK can be installed on the PingFederate server or any
-									other J2EE container.</p></li>
-							<li><p class="col-para-bulletpoints">Supports Just-In-Time provisioning.</p></li>
-							<br>
-							<!-- ### FEATURES ### -->
-						</ul>
-						<a style="padding:32px" name="Benefits"></a>
-						<p class="col-sub-headings"><b>2. Benefits</b></p>
-						<ul style="margin-left:30px;" class="col-para-bulletpoints">
-							<li><p class="col-para-bulletpoints">Helps achieve painless integration
-									of modern IAM into your existing architecture.</p></li>
-							<li><p class="col-para-bulletpoints">Enables you to modernize or migrate
-									off legacy IAM without disrupting critical access to Oracle E-Business
-									Suite.</p></li>
-							<li><p class="col-para-bulletpoints">Frees you from vendor lock-in with
-									legacy IAM licensing—you will only require your EBS license.</p></li>
-							<li><p class="col-para-bulletpoints">Requires no provisioning of
-									additional hardware components.</p></li>
-
-						</ul>
-						<a style="padding:32px" name="System Requirements"></a>
-						<p class="col-sub-headings"><b>3. System Requirements</b></p>
-						<ul style="margin-left:30px;" class="col-para-bulletpoints">
-							<li><p class="col-para-bulletpoints">Java JDK 1.8 (Recommended Version)</p></li>
-							<li><p class="col-para-bulletpoints">PingFederate 8 and above</p></li>
-							<li><p class="col-para-bulletpoints">EBS IKT package with a valid license
-									file</p></li>
-						</ul>
-						<br>
-						<img src="assets/img/eik-system-requirements.png" alt=""
-							class="col-images-intro"/>
-						<br>
-						<br>
-						<a style="padding:32px" name="Overview-of-the-flow"></a>
-						<p class="col-sub-headings"><b>4. Overview of the flow</b></p>
-						<ul style="margin-left:30px;" class="col-para-bulletpoints">
-							<li><p class="col-para">1. When a user tries to login, his/her
-									credentials are sent to Pingfederate</p></li>
-							<li><p class="col-para">2. Pingfederate validates the entered credentials
-									against the configured Authentication Store (i.e.,any LDAP directory)</p></li>
-							<li><p class="col-para">3. The existence of the authenticated user will
-									be checked against the EBS Database. If the user does exist in the EBS
-									DB, an EBS session would be created, and the user would be allowed
-									access to the requested page in EBS</p></li>
-							<li><p class="col-para">4. If the authenticated user does not exist in
-									the EBS DB, the user would not be authorized to access the EBS
-									Application</p></li>
-							<li><p class="col-para">5. If Just-In-Time Provisioning is enabled,
-									authenticated users not present in the EBS DB would be provisioned by
-									the EBS IKT, and EBS Sessions would then be created, thereby giving
-									access to the EBS Application</p></li>
-
-
-						</ul>
-						<br>
-						<br>
-						<br>
-
-						<h4><b>Configuration of PingFederate</b></h4>
-						<p class="col-para">PingFederate is a federation server that provides web
-							single sign-on and API security for the resources in your Organization.</p>
-						<a style="padding:32px" name="Introduction"></a>
-						<!-- ### FEATURES ### -->
-						<a style="padding:32px" name="configure-html"></a>
-						<p class="col-sub-headings"><b>2.0 Configure HTML Form Adapter</b></p>
-						<ul style="margin-left:30px;" class="col-para">
-							<li><p class="col-para">1. In PingFederate console go to Identity
-									Provider >> Adapters>>Click New Adapter</p></li>
-							<li><p class="col-para">2. Provide the Instance Name & ID then Select
-									“Type” as “HTML Form IdP Adapter” and click Next</p></li>
-							<br>
-							<img src="assets/img/pf-1.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">3. In the Next page, Add the “Password
-									Credentials Validator” and click “Show advanced field” to add
-									“/idplogout” in Logout Path Text Field. Then Click Next.</p></li>
-							<br>
-							<img src="assets/img/pf-2.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<br>
-							<img src="assets/img/pf-3.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">4. Add any additional attribute in Extended
-									Contracts if required or leave the default values as such</p></li>
-							<br>
-							<img src="assets/img/pf-4.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">5. Enable “Pseudonym” for username (SP Partners
-									may choose to receive so that they can uniquely identify a user) and
-									click Next </p></li>
-							<br>
-							<img src="assets/img/pf-5.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">6. Configure the Adapter Contract Mapping or
-									leave it as default and click Next.</p></li>
-							<br>
-							<img src="assets/img/pf-6.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">7. Review the Summary and Click Done and proceed
-									to Save the adapter</p></li>
-
-
-						</ul>
-						<a style="padding:32px" name="oauth-side-configuration"></a>
-						<p class="col-sub-headings"><b>2.1 OAuth Server side Configuration</b></p>
-						<p class="col-para">Configuring Oauth/OIDC flow PingFederate & EBS
-							Integration Kit requires the following sections to be configured: </p>
-						<ul style="margin-left:30px;" class="col-para-bulletpoints">
-							<li><p class="col-para-bulletpoints">Authorization server settings</p></li>
-							<li><p class="col-para-bulletpoints">Scope Management</p></li>
-							<li><p class="col-para-bulletpoints">IDP Adapter Mapping</p></li>
-							<li><p class="col-para-bulletpoints">Access Token Management</p></li>
-							<li><p class="col-para-bulletpoints">Access Token Mapping</p></li>
-							<li><p class="col-para-bulletpoints">OpenID Connect Policy Management</p></li>
-							<li><p class="col-para-bulletpoints">Client Creation</p></li>
-
-						</ul>
-						<a style="padding:32px" name="authorization-server-settings"></a>
-						<p class="col-sub-headings"><b>2.2 Authorization Server Settings</b></p>
-						<p class="col-para">Authorization Server Settings provide general
-							configuration and policy for the PingFederate Authorization Server</p>
-						<ul style="margin-left:30px;" class="col-para">
-
-							<li><p class="col-para">1. Go to OAuth Server >> Under Authorization
-									Server >> Authorization Server Settings</p></li>
-							<li><p class="col-para">2. Enable the Track Users session for Log out
-									checkbox and leave the remaining as default and click Save</p></li>
-							<br>
-							<img src="assets/img/pf-7.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-						</ul>
-
-						<a style="padding:32px" name="scope-management"></a>
-						<p class="col-sub-headings"><b>2.3 Scope Management</b></p>
-						<p class="col-para">Scopes can be declared as dynamic, which allows OAuth
-							clients to requestscopes where a
-							component of the scope name is variable. Common scopes are available to
-							OAuth clients
-							by default unless individual clients are configured to restrict common
-							scopes</p>
-						<ul style="margin-left:30px;" class="col-para">
-							<li><p class="col-para">1. Go to OAuth Server >>Under Authorization
-									Server >> Scope Management</p></li>
-							<li><p class="col-para">2. The Default scopes for PingFederate are Email,
-									Profile, Openid, Address, Phone</p></li>
-							<br>
-							<img src="assets/img/pf-8.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-						</ul>
-
-
-						<a style="padding:32px" name="idp-adapter-mapping"></a>
-						<p class="col-sub-headings"><b>2.4 IdP Adapter Mapping</b></p>
-						<p class="col-para">This configuration allows you tomap attributes based
-							on an IdP adapter configuration into
-							the USER_KEY and USER_NAME attributes (presented to the user for
-							authorization
-							permission) for a persistent grant, as well as the extended attributes</p>
-						<ul style="margin-left:30px;" class="col-para">
-							<li><p class="col-para">1. Go to OAuth Server >> Authorization Server >>
-									IdP Adapter Mapping and select HTML Form Adapter and click Add Mapping
-								</p></li>
-							<li><p class="col-para">2. Add any Data Store details if values are
-									pulled from a Data Store. If not, click Next</p></li>
-							<li><p class="col-para">3. In Contract Fulfillment, Map the USER_NAME &
-									USER_KEY value from either the Adapter or Data Store </p></li>
-							<br>
-							<img src="assets/img/pf-9.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">4. In the next page, provide any access
-									restriction criteria details if the restriction of user access is
-									required or click Next</p></li>
-							<li><p class="col-para">5. Review the Summary and then click Done and
-									Save</p></li>
-
-						</ul>
-
-						<a style="padding:32px" name="access-token-management"></a>
-						<p class="col-sub-headings"><b>2.5 Access Token Management</b></p>
-						<p class="col-para">PingFederate uses Access Token Management plugins to
-							issue and validate OAuth
-							access tokens. Each plugin instance can have its own token type,
-							configuration settings,
-							and attribute contract.</p>
-						<ul style="margin-left:30px;" class="col-para">
-							<li><p class="col-para">1. Go to OAuth Server >> Under Token Mapping >>
-									Access Token Management >> Create New Instance by providing the
-									Instance Name & ID, Type as “JSON Web Token” Click Next.</p></li>
-							<br>
-							<img src="assets/img/pf-10.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">2. In Instance Configuration Section, under
-									Certificates, Add the Signing & Decryption certificate </p></li>
-							<p class="col-para">Note: When defining an access token management
-								instance, you can
-								customize various settings, including the token format, lifetime, and
-								attribute
-								contract for this instance.</p>
-
-							<br>
-							<img src="assets/img/pf-11.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para">3. Under JWS Algorithm Dropdown, choose RSA using
-									SHA-256</p></li>
-							<li><p class="col-para">4. Under Active Signing Certificate Key ID
-									Dropdown, select the key ID which is added above</p></li>
-							<br>
-							<img src="assets/img/pf-12.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para">5. In the next page, there will be no changes to
-									the Session Validation Settings here. So, leave it defaults.</p></li>
-							<li><p class="col-para">6. In the below screenshot, In Access Token
-									Attribute Contract, we define the attribute
-									contract for the access tokens issued by this access token management
-									instance.
-									Extend the contract with the ‘eik_username’ & ‘username’ attributes.</p></li>
-							<br>
-							<img src="assets/img/pf-13.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para-bulletpoints">7. Click Next</p></li>
-							<li><p class="col-para-bulletpoints">8. Under Access Control, we can
-									restrict the clients who can use this Access Token
-									Management Instance, which we do not use here. So, click Next.</p></li>
-							<li><p class="col-para-bulletpoints">9. Review the Summary and Click
-									Save.</p></li>
-
-
-						</ul>
-						<a style="padding:32px" name="access-token-mapping"></a>
-						<p class="col-sub-headings"><b>2.6 Access Token Mapping</b></p>
-						<p class="col-para">Access Token Mapping is used to map the attributes to
-							fulfill the access token attribute
-							contract. This configuration maps from a persistent grant into the access
-							token attribute
-							contract and there should be a default mapping configured for each access
-							token manager.</p>
-						<ul style="margin-left:30px;" class="col-para">
-							<li><p class="col-para-bulletpoints">1. Go to OAuth Server >> Under Token
-									Mapping >> Access Token Mapping.</p></li>
-							<br>
-							<img src="assets/img/pf-10.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-							<li><p class="col-para-bulletpoints">2.Map the “Context” (IDP Adapter:
-									HTMLFormAdapter) to “Access Token Manager”
-									(JSONWebToken) and then click “Add Mapping”.</p></li>
-
-							<br>
-							<img src="assets/img/pf-14.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para-bulletpoints">3. In “Attribute Source Lookup” Tab
-									(optional), we can add any Attribute Source to fetch
-									the attribute values from any of your desired datastore and on
-									completion click Next. </p></li>
-							<li><p class="col-para-bulletpoints">4. In “Contract Fulfillment” tab,
-									map the Source as Persistent Grant and its value as
-									“USER_KEY” for all contracts as shown in the below screenshot.</p></li>
-
-									<p class="col-para">Note: Usually in the Contract Fulfillment screen, we map values into the
-										token attribute contract. These are the attributes that will be included or
-										referenced in the access token. When we select Persistent Grant, the
-										associated Value list is populated by the USER_KEY and extended attributes from
-										the persistent access-token grant.</p>
-						
-
-							<br>
-							<img src="assets/img/pf-15.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para-bulletpoints">5.In the next page, provide any
-									restriction rules to limit the unauthorized access or leave
-									defaults & click Next.</p></li>
-
-
-							<img src="assets/img/authenion-intro.png" alt=""
-								class="col-images-intro"/> <br>
-
-							<p class="col-para">Note: In this screen, we define the criteria that
-								must be satisfied so that PingFederate
-								processes the request further. In essence, this token authorization
-								feature provides
-								the capability to conditionally approve or reject requests based on
-								individual
-								attributes.</p>
-
-							<br>
-							<img src="assets/img/pf-16.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para-bulletpoints">6.Review the Summary and tap Save.</p></li>
-							<a style="padding:32px" name="oidc-policy-management"></a>
-							<p class="col-sub-headings"><b>2.7 OpenID Connect Policy Management </b></p>
-							<p class="col-para">Here we define OpenID Connect policies and manage
-								them for obtaining user attributes
-								which act as the claims to be sent in an ID Token and, also in response
-								to requests received
-								at the PingFederate User Info endpoint. Policies that are defined here
-								can be mapped to
-								specific OAuth clients.</p>
-							<li><p class="col-para">1.Go to OAuth Server >> Token Mapping >> OpenID
-									Connect Policy Management >> Add
-									Policy.</p></li>
-							<li><p class="col-para">2.Provide a Policy Name & Select the Access Token
-									Manager and leave the remaining as
-									default. Click Next.</p></li>
-
-							<br>
-							<img src="assets/img/pf-17.png" alt="" class="col-images-intro"/>
-
-							<li><p class="col-para">3.Under Attribute Contract, Extend the Contract
-									by manually adding ‘eik_username’ and
-									delete the other attributes present. Enable checkboxes for ‘Override
-									Default Delivery,.</p></li>
-
-							<br>
-							<img src="assets/img/pf-18.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para">4.Click Next.</p></li>
-
-							<li><p class="col-para">5.Under Attribute Scopes Section, select openid
-									from the Scope dropdown and in
-									Attributes tick the ‘eik_username’ checkbox.</p></li>
-
-							<br>
-							<img src="assets/img/pf-19.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para">6.Attributes can be fetched from any of the
-									datastore at the runtime or leave it as to use
-									the values presented in the Token.</p></li>
-
-							<br>
-							<img src="assets/img/pf-20.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para">7.Under Contract Fulfillment Section, Map the Sub
-									& eik_username attribute from the
-									source - Access Token and value – username.</p></li>
-
-
-
-
-							<p class="col-para">Note: In the Contract Fulfillment screen, we map
-								attributes from the
-								access token or other sources to fulfill the attribute contract. Here,
-								the value is
-								provided from the access token.</p>
-
-							<br>
-							<img src="assets/img/pf-21.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para">8.In the next page, provide any restriction rules
-									in case of restricting any unauthorized
-									access.</p></li>
-
-							<p class="col-para">Note: In this screen, we define the criteria that
-								must be satisfied so that
-								PingFederate processes the request further. In essence, this token
-								authorization
-								feature provides the capability to conditionally approve or reject
-								requests based on
-								individual attributes. We can define multiple criteria, so that in this
-								case, ALL the
-								criteria must be satisfied in order for PingFederate to move a request
-								to the next
-								phase.</p>
-
-							<br>
-							<img src="assets/img/pf-22.png" alt="" class="col-images-intro"/>
-							<br>
-							<br>
-
-							<li><p class="col-para">9. Review Summary and Click Save.</p></li>
-
-							<a style="padding:32px" name="client-config-oauth"></a>
-							<p class="col-sub-headings"><b>2.8 Client Configuration for OAuth Server.</b></p>
-							<p class="col-para">Here we can manage the configurations and policy
-								information related to a client.</p>
-
-							<li><p class="col-para-bulletpoints">1.In the PingFederate Admin Console,
-									go to OAuth Server >> Clients >> Create New.</p></li>
-
-							<li><p class="col-para">2.Create a new client with the following details
-									Client Name : “<Specify any Client Name for EIK>”
-										Client ID : “<Specify any Client ID for EIK>”
-											Client Secret : “<(Create secret using Generate Secret option)>”.</p></li>
-										<li><p class="col-para">3.Type the Redirection URL in the format:
-												https://<pf-hostname>:<pf-runtime-port>/<context>/handler.</p></li>
-													<li><p class="col-para">4.Tick the checkbox for Bypass
-															Authorization Approval.</p></li>
-
-													<li><p class="col-para">5.For Allowed Grant Types, select
-															Authorization Code and Refresh Token.</p></li>
-
-													<li><p class="col-para">6.For Default Access Token Manager choose
-															JSONWebToken.</p></li>
-
-
-													<li><p class="col-para">7.Under OpenID Connectsection, choose the
-															Policy you configured just before.</p></li>
-
-													<li><p class="col-para">8.Leave the remaining as default and click
-															Save</p></li>
-
-
-													<br>
-													<img src="assets/img/pf-23.png" alt="" class="col-images-intro"/>
-													<br>
-													<br>
-
-													<br>
-													<img src="assets/img/pf-24.png" alt="" class="col-images-intro"/>
-													<br>
-													<br>
-
-
-													<br>
-													<img src="assets/img/pf-25.png" alt="" class="col-images-intro"/>
-													<br>
-													<br>
-
-
-													<br>
-													<img src="assets/img/pf-26.png" alt="" class="col-images-intro"/>
-													<br>
-													<br>
-
-													<a style="padding:32px" name="configure-ssl-cert"></a>
-													<p class="col-sub-headings"><b>2.9 Configure SSL Server certificate</b></p>
-													<p class="col-para">SSL certificates are created as they need to be
-														presented for getting access to the
-														PingFederate administrative console and for all the incoming HTTPS
-														connections at the runtime
-														engine nodes.If you already own an SSL certificate for
-														pingfederate we can skip to the Key Generation
-														part, else we need to proceed with the following steps to
-														configure a self-signed certificate:</p>
-
-
-													<li><p class="col-para">1.In PingFederate Click Security >>
-															Security and Certificate Key Management >> SSL
-															Server Certificate >> Create New.</p></li>
-
-													<li><p class="col-para">2.Enter the details and create a
-															certificate.</p></li>
-
-													<li><p class="col-para">3.Export this certificate now with the
-															option of exporting “Certificate Only” and notwith
-															the private key.</p></li>
-
-													<p class="col-para">Note: As part of the Key Generation process,
-														add the exported
-														certificate to Trusted CAs in PingFederate Admin console.</p>
-
-
-
-											<h4><b>Deploying EIK in PingFederate</b></h4>
-
-
-													<p class="col-para">The following steps should be followed for the
-														deployment of EBS Integration Kit in
-														PingFederate server. As a pre-requisite, the EIKAuth.config
-														configuration file & EIK.dbcx EBS
-														DataSource (DBCX) file should be generated before deploying the
-														EIK war package.Pre-Requisite: An environment variable ‘EIK_HOME’
-														should be set in the PingFederate server
-														before deploying the EBS Integration Kit.</p>
-
-
-													<li><p class="col-para">1.Navigate to <pf_install>/pingfederate
-																directory.</p></li>
-
-																<a style="padding:32px" name="create-ebsauth"></a>
-														<li><p class="col-para">2.Create a new directory named “EBSAuth”.
-																After creation, the directory structure will
-																look like the following:
-																<pf_install>/pingfederate/EBSAuth.</p></li>
-
-															<a style="padding:32px" name="placing-license"></a>
-															<li><p class="col-para">3.Now, Place the EBS IKT license file
-																	“ebsauth.lic” in <pf_install>/pingfederate /EBSAuth
-																		directory.</p></li>
-
-
-																<li><p class="col-para">4.Now navigate to user’s base path using
-																		cd ~ and set the environmental variable for
-																		EIK_HOME in .bash profile : vi .bash_profile
-																		.</p></li>
-
-																<a style="padding:32px" name="setting-eik-home"></a>
-																<li><p class="col-para">5.Set EIK_HOME using this command:
-																		export EIK_HOME = <pf_install>/pingfederate.</p></li>
-
-
-																	<li><p class="col-para">6.Save and close the file.</p></li>
-																	<li><p class="col-para">7.Enter the following command to source
-																			the bash file: . ./.bash_profile.</p></li>
-
-
-																	<li><p class="col-para">8.Verify the new settings using the
-																			following commands, echo $EIK_HOME.</p></li>
-
-
-
-																	<p class="col-para">Note: If PingFederate is configured in
-																		Cluster, repeatsteps 1 to 8 in all the runtime
-																		servers.</p>
-																		<a style="padding:32px" name="eik-auth-file-gen"></a>
-																	<p class="col-sub-headings"><b>3.1 EIKAuth Config File
-																			Generation</b></p>
-
-
-
-																	<li><p class="col-para-bulletpoints">1.The JAR file
-																			EIKutility.jar needs to be placed in the $EIK_HOME directory
-																			created in the
-																			previous section.</p></li>
-
-
-																	<li><p class="col-para-bulletpoints">2.Open terminal/command
-																			prompt (as Administrator) and navigate to EIK_HOME
-																			directory and execute the following command:
-																			java -cp EIKutility.jar
-																			com.likeminds.EBSAuth.EIKAdminUtility.</p></li>3.1 EIKAuth Config File Generation
-
-
-																	<li><p class="col-para-bulletpoints">3.On running the command,
-																			we get a dialog box as follows, Enter all values as per the
-																			configuration for all the fields using the template given
-																			below:</p></li>
-
-																	<br>
-																	<img src="assets/img/eik-1.png" alt=""
-																		class="col-images-intro"/>
-																	<br>
-																	<br>
-
-
-																	<li><p class="col-para-bulletpoints">4.After entering these
-																			values in the dialog box, a file named EIKAuth.config gets
-																			generated at the EIK_HOME directory.</p></li>
-
-
-																	<li><p class="col-para-bulletpoints">5.Now, move the
-																			EIKAuth.config file to the following location:
-																			<pf_install>/pingfederate/EBSAuth</p></li>
-
-
-																		<p class="col-para">Note: If PingFederate is configured in
-																			Cluster, copy the EIKAuth.config file to all the
-																			runtime servers in the same directory location.</p>
-
-
-																			<a style="padding:32px" name="ebs-dbcs-creation"></a>
-																		<p class="col-sub-headings"><b>3.2 EBS DataSource (DBCX) File Creation</b></p>
-
-
-
-																		<li><p class="col-para-bulletpoints">1.Before proceeding with
-																				the DBCX file generation, a custom user should be created in
-																				the EBS Application FND_USER table (Username – EIKUSER) with
-																				the
-																				UMX|APPS_SCHEMA_CONNECT role enabled<pf_install></p></li>
-																			<li><p class="col-para-bulletpoints">2.Place the JAR file
-																					EBSdatasource.jar in the $EIK_HOME directory & open the
-																					terminal/command prompt and navigate to EIK_HOME directory
-																					to execute and
-																					generate the EBS Datasource file:
-																					ava -cp EBSdatasource.jar
-																					com.likeminds.ebsauth.v1.EIKDatasource Y<pf_install></p></li>
-																				<p class="col-para">Note: The jar file can also be placed &
-																					executed in any server outside of
-																					PingFederate, provided, there should be a connectivity to
-																					the EBS Database from the
-																					execution source.</p>
-
-
-																				<li><p class="col-para-bulletpoints">3.In the nextstep,
-																						provide the configuration details of your environment as
-																						mentioned in
-																						the screenshot:<pf_install></p></li>
-
-																					<br>
-																					<img src="assets/img/pf-28.png" alt=""
-																						class="col-images-intro"/>
-																					<br>
-																					<br>
-
-																					<p class="col-para">Enter the connection factory class:
-																						oracle.jdbc.pool.OracleDataSource
-																						Enter the JDBC URL: jdbc:oracle:thin:@<EBS DB domain name>:<EBS
-																								DB Port>:<SID>
-																									(Use Scan hostnames in case of RAC database)</p>
-
-
-																								<p class="col-para">Enter APPS username:</p>
-																								<p class="col-para">Enter APPS password:</p>
-																								<p class="col-para">Enter Connection pool name: EBSAuth</p>
-																								<p class="col-para">Enter initial connection pool size:
-																									10</p>
-																								<p class="col-para">Enter min. connection pool size: 10</p>
-																								<p class="col-para">Enter max. initial pool size: 50</p>
-																								<p class="col-para">Enter timeout check interval(Default
-																									is 30 secs): 30</p>
-																								<p class="col-para">Enter inactive connection timeout
-																									(Default is 0 secs): 30</p>
-																								<p class="col-para">Enter validate connection on borrow
-																									(true/false): true</p>
-																								<p class="col-para">Enter the EIK username: EIKUSER</p>
-																								<p class="col-para">Enter the EIK user password:</p>
-																								<p class="col-para">Enter the Context Path: </Context of
-																									the war file> </p>
-
-
-																							<li><p class="col-para-bulletpoints">4.After entering all
-																									the above-mentioned values, the EIKUSER will get
-																									registered with the
-																									following message.<pf_install></p></li>
-
-																								<br>
-																								<img src="assets/img/pf-29.png" alt=""
-																									class="col-images-intro"/>
-																								<br>
-																								<br>
-
-																								<li><p class="col-para-bulletpoints">5.As part of the
-																										successful execution, a new file EIK.dbcx will be
-																										generated in the
-																										EIK_HOME directory.<pf_install></p></li>
-
-
-
-																									<li><p class="col-para-bulletpoints">6.Now move the
-																											EIK.dbcx file to the following location:
-																											<pf_install>/pingfederate/EBSAuth <pf_install></p></li>
-																											<p class="col-para">Note: If PingFederate is
-																												configured in Cluster, copy the EIK.DBCX file to all
-																												the runtime
-																												servers in the same directory location.</p>
-
-
-																											<a style="padding:32px" name="deploying-log4j2"></a>
-																											<p class="col-sub-headings"><b>3.3 Deploying the
-																													log4j2.xml File</b></p>
-
-
-																											<p class="col-para">Move the provided log4j2.xml file
-																												to the following location</p>
-
-
-																											<p class="col-para"><pf_install>/pingfederate/EBSAuth</p>
-																												<p class="col-para">Note: If PingFederate is
-																													configured in Cluster, copy the log4j2.xml file to
-																													all the runtime
-																													servers in the same directory location.</p>
-																												<a style="padding:32px" name="deploying-cacerts"></a>
-																												<p class="col-sub-headings"><b>3.3 Deploying the
-																														cacerts File</b></p>
-
-
-																												<p class="col-para">Move the java cacerts file to
-																													the following location:</p>
-
-																												<p class="col-para"><pf_install>/pingfederate/EBSAuth</p>
-																													<p class="col-para">Note: If PingFederate is
-																														configured in Cluster, copy the cacerts file to
-																														all the runtime
-																														servers in the same directory location.</p>
-																												
-																												<a style="padding:32px" name="deployong-security-properties"></a>
-																												<p class="col-sub-headings"><b>3.4 Deploying the security.properties File</b></p>
-			
-			
-																														<p class="col-para">Move the provided security.properties file to the following location</p>
-			
-			
-																														<p class="col-para"><pf_install>/pingfederate/EBSAuth</p>
-																															<p class="col-para">Note: If PingFederate is
-																																configured in Cluster, copy the security.properties file to
-																																all the runtime
-																																servers in the same directory location.</p>
-
-
-
-
-
-																													<a style="padding:32px" name="deploying-ebsauth-war"></a>
-																													<p class="col-sub-headings"><b>3.5 Deploying
-																															EBSAuth.war File</b></p>
-
-
-																													<li><p class="col-para">1.To deploy the EBSAuth.war
-																															file in the PingFederate server, navigate to the
-																															“deploy”
-																															directory in the PingFederate installation
-																															directory.</p></li>
-
-																													<p class="col-para"><pf_install>cd /<pf_install>/pingfederate/server/default/deploy</p>
-																															<li><p class="col-para">2.Now copy and place the
-																																	EBSAuth.war file in the above deploy directory.</p></li>
-																															<p class="col-para">Note: If PingFederate is
-																																configured in Cluster, copy the EBSAuth.war file
-																																to all the
-																																runtime servers.</p>
-
-
-																															<li><p class="col-para">3.Restart the
-																																	PingFederate runtime servers (on All runtime
-																																	engine nodes if it is a
-																																	clustered deployment)</p></li>
-
-
-																															<p class="col-sub-headings">4 System Profile
-																																Parameter changes in EBS<b></b></p>
-
-																																<a style="padding:32px" name="system-profile-changes"></a>
-																															<p class="col-para"> The following Oracle EBS
-																																System Profile changes will enable SSO by
-																																delegating the authentication
-																																to PingFederate via EIK.</p>
-
-
-																															<p class="col-sub-headings"><b>4.1 System Profile
-																																	Changes</b></p>
-
-
-																															<li><p class="col-para">1.Login into the EBS
-																																	Application using the System Admin credentials.</p></li>
-																															<li><p class="col-para">2.Locate and change the
-																																	following EBS system profiles at Site Level for
-																																	enabling SSO.</p></li>
-
-
-																															<br>
-																															<img src="assets/img/pf-30.png" alt=""
-																																class="col-images-intro"/>
-																															<br>
-																															<br>
-
-																															<li><p class="col-para">3.Restart the EBS
-																																	Application Server once the changes had been
-																																	made and this completes
-																																	the SSO profile parameter changes in Oracle
-																																	EBS.</p></li>
-
-
-																															<p class="col-sub-headings"><b>4.2 SSO Testing
-																																	for Oracle EBS</b></p>
-
-																															<li><p class="col-para">1.Enter the URL for SSO
-																																	of EBS (For Example: <ebs-hostname>:<port>)</p></li>
-																																	<br>
-																																	<img src="assets/img/pf-31.png" alt=""
-																																		class="col-images-intro"/>
-																																	<br>
-																																	<br>
-
-																																	<li><p class="col-para">2.This URL redirects
-																																			the user to Pingfederate which throws up an
-																																			authentication prompt for
-																																			entering the user credentials.</p></li>
-
-																																	<br>
-																																	<img src="assets/img/pf-32.png" alt=""
-																																		class="col-images-intro"/>
-																																	<br>
-																																	<br>
-
-																																	<li><p class="col-para">3.On successful
-																																			validation of the user credentials, the user
-																																			will get access to the EBS
-																																			Homepage.</p></li>
-
-																																	<br>
-																																	<img src="assets/img/pf-33.png" alt=""
-																																		class="col-images-intro"/>
-																																	<br>
-																																	<br>
-
-                                                                                                                                    <!-- ### Overview ### -->
-                                                                                                                                    <div>
-	                                                                                                                                <h4><b>Overview</b></h4>
-	                                                                                                                                <p class="col-para">The LikeMinds Splunk app for the EBS Integration kit offers administrators valuable insights into common
-																																		EBS SSO events. Additionally, the app provides comprehensive error reporting and analysis capabilities, as
-																																		well as real-time issue detection and alerting functionality.</p>
-
-																																		<p class="col-para">This technical document will guide the reader through the installation process of the Splunk app for EIK, as
-																																			well as the configuration of the EIK environment to push logs to Splunk enterprise. Furthermore, this
-																																			document will provide an overview of how the app can be used effectively.</p>
-																																			
-																																			<p class="col-para">The Splunk app version 1.0.0 for the EBS Integration kit has been tested successfully on Splunk Enterprise
-																																				version 9.0.4.</p>
-																																				
-																																	 
-	                                                                                                                                <a style="padding:32px" name="Overview"></a>
-
-																																	<!-- ### FEATURES of Splunk ### -->
-																																	<div>
-																																	<h4><b>Features of Splunk</b></h4>						                                    
-																																   <p class="col-para">The Splunk app for the EIK provides the below features:</p>																															
-																																   
-						                                                                                                           <ul style="margin-left:30px;" class="col-para-bulletpoints">
-							                                                                                                       <li><p class="col-para-bulletpoints">1. Dashboards</p></li>
-																																   <li><p class="col-para-bulletpoints">2. Alerting</p></li>
-																																   <li><p class="col-para-bulletpoints">3. Reports</p></li>
-																																   <li><p class="col-para-bulletpoints">4. Search</p></li>
-
-																																   <a style="padding:32px" name="FEATURES of Splunk"></a>
-
-
-																																   <br>
-																																	<img src="assets/img/pf-34.png" alt=""
-																																		class="col-images-intro"/>
-																																	<br>
-																																	<br>
-
-																																	<p class="col-sub-headings"><b>1. Dashboards</b></p>
-
-																																	<p class="col-para">a. Error Dashboard: The Error Dashboard provides analytics and drill-down capabilities for
-																																		historical and real-time error events including:</p>
-																																		
-																																
-																																	<li><p class="col-para-bulletpoints">Error trends across time</p></li>
-																																	<li><p class="col-para-bulletpoints">Total Error count</p></li>
-																																	<li><p class="col-para-bulletpoints">Error Distribution by type</p></li>
-																																	<li><p class="col-para-bulletpoints">Error Count by Type</p></li>
-
-																																		<br>
-																																		<img src="assets/img/pf-35.png" alt=""
-																																			class="col-images-intro"/>
-																																		<br>
-																																		<br>
-
-																																	<p class="col-sub-headings"><b>b. General Information Dashboard: This dashboard provides an overview of all EIK transactions.
-																																			The information provided by this chart include:</b></p>
-																																			
-																																			<li><p class="col-para-bulletpoints">The version of EIK currently deployed.</p></li>
-																																			<li><p class="col-para-bulletpoints">Summary of all transactions</p></li>
-																																			<li><p class="col-para-bulletpoints">Top 10 users by login count</p></li>
-																																			<li><p class="col-para-bulletpoints">Number of EBS logins via EIK across time</p></li>
-
-																																			<br>
-																																			<img src="assets/img/pf-36.png" alt=""
-																																				class="col-images-intro"/>
-																																			<br>
-																																			<br>
-
-																																			<p class="col-sub-headings"><b>2. Alerts</b></p>
-																																				
-																																			<p class="col-para">The app comes with two basic alerts that will send out notifications upon detecting errors related
-																																				to SQL connectivity and Licensing. Use these as templates to create custom-tailored alerts better
-																																				suited to the requirements of the organization.</p>
-																																				
-																																				<br>
-																																				<img src="assets/img/pf-37.png" alt=""
-																																					class="col-images-intro"/>
-																																				<br>
-																																				<br>
-
-																																				<p class="col-sub-headings"><b>3. Reports</b></p>
-
-																																				<p class="col-para">The reports used to create the charts and diagrams in the dashboards can be viewed individually.</p>
-																																					
-																																				<br>
-																																				<img src="assets/img/pf-38.png" alt=""
-																																					class="col-images-intro"/>
-																																				<br>
-																																				<br>
-
-																																				<p class="col-sub-headings"><b>4. Search</b></p>
-
-																																				<p class="col-para">To generate custom reports and queries, run your own Splunk query against the EIK Error and
-																																					Debug Indexes in the Search tab of the app.</p>
-																																					
-																																					<br>
-																																					<img src="assets/img/pf-39.png" alt=""
-																																						class="col-images-intro"/>
-																																					<br>
-																																					<br>
+        </ul>
+      </li><!-- End Forms Nav -->
+	  
+	   <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#SystemRequirements">
+          <i class="bi bi-menu-button-wide"></i><span>System Requirements</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+         <li>
+          <a href="#SupportedOS">
+              <i class="bi bi-circle"></i><span>Supported Operating Systems </span>
+            </a>
+          </li>
+          <li>
+            <a href="#LinuxUserrequirements">
+              <i class="bi bi-circle"></i><span>Linux User requirements in the Authenion Server</span>
+            </a>
+          </li>
+          <li>
+            <a href="#SupportedJavaenvironment">
+              <i class="bi bi-circle"></i><span>Supported Java environment </span>
+            </a>
+          </li>
+          <li>
+            <a href="#MinimumHR">
+              <i class="bi bi-circle"></i><span>Minimum Hardware requirements </span>
+            </a>
+          </li>
+          <li>
+            <a href="#RecommendedHR">
+              <i class="bi bi-circle"></i><span>Recommended Hardware requirements</span>
+            </a>
+          </li>
+          <li>
+            <a href="#PortRequirements">
+              <i class="bi bi-circle"></i><span>Default Port requirements </span>
+            </a>
+          </li>
+          
+        </ul>
+      </li>
+	  <!-- End Components Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Installation</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+         <li>
+            <a href="#pre-reqs section">
+              <i class="bi bi-circle"></i><span>Pre-requisites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#install-authenion section">
+		    <i class="bi bi-circle"></i><span>Install Authenion</span>
+            </a>
+          </li> 
+           <li>
+            <a href="#setup section">
+              <i class="bi bi-circle"></i><span>Setup Authenion</span>
+            </a>
+          </li>
+          <li>
+            <a href="#start-stop section">
+              <i class="bi bi-circle"></i><span>Start & Stop Services</span>
+            </a>
+          </li> 
+           <li>
+            <a href="#health-check section">
+              <i class="bi bi-circle"></i><span>Authenion Health-check</span>
+            </a>
+          </li>
+          <li>
+            <a href="#idp-cert section">
+              <i class="bi bi-circle"></i><span>Install Identiy Provider's Certificate into Authenion Trust Store</span>
+            </a>
+          </li> 
+           <li>
+            <a href="#ssl-cert section">
+              <i class="bi bi-circle"></i><span>Install SSL Certificate for Authenion</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Console Navigation & Configurations</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#Applications / Dashboard page">
+              <i class="bi bi-circle"></i><span>Dashboard/Applications</span>
+            </a>
+          </li>
+         <li>
+            <a href="#Getting config-data into the UI">
+              <i class="bi bi-circle"></i><span>Import - Getting config-data into the UI</span>
+            </a>
+          </li>
+          <li>
+            <a href="#OIDC Configuration">
+              <i class="bi bi-circle"></i><span>OIDC Configuration</span>
+            </a>
+          </li>
+            </a>
+          </li>
+          <li>
+            <a href="#Sidebar">
+              <i class="bi bi-circle"></i><span>Sidebar</span>
+            </a>
+          </li>
+       <li>
+            <a href="#Applications">
+              <i class="bi bi-circle"></i><span>Applications</span>
+            </a>
+          </li>
+         <li>
+            <a href="#Virtual Servers">
+              <i class="bi bi-circle"></i><span>Virtual Servers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Application Hosts">
+              <i class="bi bi-circle"></i><span>Application Hosts</span>
+            </a>
+          </li>
+            </a>
+          </li>
+          <li>
+            <a href="#Header Mapping">
+              <i class="bi bi-circle"></i><span>Header Mappings</span>
+            </a>
+          </li>
+   <li>
+            <a href="#Resources">
+              <i class="bi bi-circle"></i><span>Resources</span>
+            </a>
+          </li>
+         <li>
+            <a href="#Authenion Status">
+              <i class="bi bi-circle"></i><span>Authenion Status</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Export">
+              <i class="bi bi-circle"></i><span>Export</span>
+            </a>
+          </li>
+            </a>
+          </li>
+          <li>
+            <a href="#Sync">
+              <i class="bi bi-circle"></i><span>Sync</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i><span>Configure your Identity Provider</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#PingFederate as the Token Provider">
+              <i class="bi bi-circle"></i><span>PingFederate as the Token Provider</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Microsoft Azure Active Directory as the Token Provider">
+              <i class="bi bi-circle"></i><span>Microsoft Azure Active Directory as the Token Provider</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-heading"></li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>The EBS Integration Kit</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      
+
+	  <li class="nav-item">
+		<a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+		  <i class="bi bi-journal-text"></i><span>Ebiz Configuration</span><i class="bi bi-chevron-down ms-auto"></i>
+		</a>
+		<ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+		
+		  <li>
+			<a href="#Introduction">
+			  <i class="bi bi-circle"></i><span>Introduction</span>
+			</a>
+		  </li>
+		  <li>
 	
+			<a href="#How does the EBS Integration Kit work?">
+			  <i class="bi bi-circle"></i><span>How does the EBS Integration Kit work?</span>
+			</a>
+		  </li>
+		  <li>
+			<a href="#System Requirements">
+			  <i class="bi bi-circle"></i><span>System Requirements</span>
+			</a>
+		  </li> 
+		  <li>
+			<a href="#Provisioning capabilities">
+			  <i class="bi bi-circle"></i><span>Provisioning capabilities</span>
+			</a>
+		  </li>
+		  <!--<li>
+			<a href="forms-validation.html">
+			  <i class="bi bi-circle"></i><span></span>
+			</a>
+		  </li>-->
+		</ul>
+	  </li><!-- End Forms Nav -->
 
-<!-- ### 3. Installing the EIK app on Splunk Enterprise ### -->
-<a style="padding:32px" name="Installing eik"></a>
-<p class="col-sub-headings"><b>3. Installing the EIK app on Splunk Enterprise</b></p>
-<p class="col-sub-headings"><b>1. Install the app</b></p>
+	  
 
-<p class="col-para">a. Download the Latest version of the Splunk App .spl file for the EIK from your customer support portal:</p>
+      
+      </li><!-- End Blank Page Nav -->
 
-<p class="col-para">https://support.likemindsconsulting.com/en/support/solutions/folders/48000690355.</p>
+    </ul>
 
-<p class="col-para">b. Install the App using the .spl file via Splunk’s App manager GUI.</p>
+  </aside><!-- End Sidebar-->
+  
+		
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+     <p>Authenion Documentation</p>
+
+    </div><!-- End Page Title -->
+
+	<!----->
+
+	<div class="body-main" data-test="bodyContent">
+		
+	<!-- Tiles -->
+		
+		<div class="tiles">
+			<div>
+				<p class="tile-title" data-test="tile">
+					  
+						 Release Notes
+						
+				</p>
+					<p class="tile-subtitle">Release summary with Features & Enhancements and bug fixes.</p>
+			 </div>
+			<div>
+				<a href="#GettingStarted">
+				<p class="tile-title" data-test="tile">
+							 Getting Started
+			   </p>
+				<p class="tile-subtitle">
+					Authenion platform and it's standards to protect Oracle Enterprise Applications
+				</p>
+			</a>
+			  </div>
+			 <div>
+				
+               <a href="#Installation">
+				<p class="tile-title" data-test="tile">
+				   Installation
+				</p>
+				<p class="tile-subtitle">Installation & Configuration instructions for Authenion
+				</p>
+				</a>
+			 </div>
+		</div>
+		
+		<div class="tiles">
+			<div>
+				
+               <a href="#Console Navigation & Configurations">
+				<p class="tile-title" data-test="tile">
+				  	  Console Navigation & Configurations
+				</p>
+				<p class="tile-subtitle">UI Navigation and steps for accessing & configuring it</p>
+			</a>
+			</div>
+			
+			<div>
+				<a href="#Configure your Identity Provider">
+				<p class="tile-title" data-test="tile">
+				  Configure your Identity Provider 
+				</p>
+				<p class="tile-subtitle">Integration requirements to connect with your Enterprise Identity Provider.</p>
+			</a>
+			</div>
+			<div>
+				<p class="tile-title" data-test="tile">
+				
+				Application Integration
+				
+				</p>
+				<p class="tile-subtitle">On-boarding the target Applications into Authenion for SSO</p>
+			</div>
+		</div>
+		<br />
+	</div>
 
 
+<!---->
+	
+    <section class="section dashboard">
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+			<div class="row">
+				<div>
+					<!-- ### RELEASE NOTES ### -->
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Release Notes</h4>
+					<p class="col-sub-headings"><b>Release: 2023</b></p>
+					<p class="col-para">Deployment: April 2023</p>
+					<p class="col-para">Software Download: <a href="https://support.likemindsconsulting.com" target="_blank">LikeMinds Helpdesk portal</a></p>
+					<p class="col-sub-headings"><b>Release Summary</b></p>
+					<p class="col-para">Authenion-2.0 version is now generally available. Authenion-2.0 release has new features, bug fixes, security enhancements and updated documentation.</p>
+					<p class="col-sub-headings"><b>Features & Enhancements</b></p>
+					<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Admins can now configure Authenion through the Administrative console. Admins can onboard/manage target Applications, OIDC Providers, Product License and lot more through the administrative console.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion administrative console is hosted by LikeMinds and is available at <a href="https://launch.authenion.com/" target="_blank">Admin UI.</a></p></li>
+						<li><p class="col-para-bulletpoints">The logging framework has been changed to Apache Log4j2 from Logback. Audit logging is now available for recording the event occurance, type, time and responsible user or service.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion Cluster is available and it provides high-availability & scalability. Authenion has inbuilt load balancer for its backend connections. However, Authenion still rquires a network load balancer to automatically balance traffic in the cluster.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion instance status can be monitored through the console. A health-check endpoint is also available to monitor its status through any monitoring tools.</p></li>
+					</ul>
+					<p class="col-sub-headings"><b>Fixes</b></p>
+					<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">AQ4-2022-1001: Multiple occurances of SSO transaction in authenion-engine logs.</a></p></li>
+						<li><p class="col-para-bulletpoints">AQ1-2023-1001: Authenion engine log recycling and log file size limit to 10MB.</p></li>
+						<li><p class="col-para-bulletpoints">AQ1-2023-1002: REST API calls authorization for Authenion agent.</p></li>
+						<li><p class="col-para-bulletpoints">AQ1-2023-1003: Cookie is configured with SameSite attribute</p></li>
+						<li><p class="col-para-bulletpoints">AQ2-2023-1006: Multiple sync requests to the same Agent APIs.</p></li>
+						<li><p class="col-para-bulletpoints">AQ2-2023-1008: Header Mapping page shows blank screen when there is no data present in OIDC claims.</p></li>
+					</ul>
 
-<br>
-																																					<img src="assets/img/pf-40.png" alt=""
-																																						class="col-images-intro"/>
-																																					<br>
-																																					<br>
+					<br />
+				</div>
 
-<p class="col-sub-headings"><b>Create the indexes</b></p>
+				
+			
+					<!-- <ul class="col-para-bulletpoints">
+						<a style="padding: 38px" name="Supported Operating Systems"></a>
+						<li><p class="col-sub-headings-sub"><b>Supported Operating Systems</b></p></li>
+						<p class="col-para-bulletpoints">
+							&emsp;▪	Red Hat Enterprise Linux 7 & above<br>
+							&emsp;▪	CentOS 7 & above<br>
+							&emsp;▪	Oracle Enterprise Linux 7 & above
+						</p>
+						<a style="padding: 38px" name="Linux User requirements"></a>
+						<li><p class="col-sub-headings-sub"><b>Linux User requirements in the Authenion Server</b></p></li>
+						<p class="col-para-bulletpoints">
+							&emsp;▪	Create a Linux user in the name of ‘appuser’ to execute Authenion scripts.<br>
+							&emsp;▪	The 'appuser' should have Read/Write privileges to the Authenion deployment package.<br>
+							&emsp;▪ Authenion should be installed in the ‘/home/appuser’ directory.
+						</p>
+						<a style="padding: 38px" name="Supported Java environment"></a>
+						<li><p class="col-sub-headings-sub"><b>Supported Java environment</b></p></li>
+						<p class="col-para-bulletpoints">
+							&emsp;▪	OpenJDK 11<br>
+							&emsp;▪	Oracle Java SE Development Kit 11 LTS / Oracle Java SE Runtime Environment (Server JRE) 8
+						</p>
+						<a style="padding: 38px" name="Minimum Hardware requirements"></a>
+						<li><p class="col-sub-headings-sub"><b>Minimum Hardware requirements</b></p></li>
+						<p class="col-para-bulletpoints">
+							&emsp;▪	2 CPU/Cores recommended<br>
+							&emsp;▪	2 GB of RAM<br>
+							&emsp;▪	15 GB available space
+						</p>
+						<a style="padding: 38px" name="Recommended Hardware requirements"></a>
+						<li><p class="col-sub-headings-sub"><b>Recommended Hardware requirements</b></p></li>
+						<p class="col-para-bulletpoints">
+							&emsp;▪	4 CPU/Cores recommended<br>
+							&emsp;▪	4 GB of RAM<br>
+							&emsp;▪	30 GB available space
+						</p>
+						<a style="padding: 38px" name="Port Requirements"></a>
+						<li><p class="col-sub-headings-sub"><b>Port requirements</b></p></li>
+						<p class="col-para-bulletpoints">
+							&emsp;▪	Authenion Sync&emsp;&emsp;-&emsp;HTTPS, TCP - 8090<br>
+							&emsp;▪	Authenion Engine&emsp;&nbsp;-&emsp;HTTPS, TCP - 3000<br>
+						</p>
+						<br>
+					</ul> -->
+				</div>
+		<br />
+				<!-- ### GETTING STARTED ### -->
+			<!--<div style="width:800px; background-color:lightgrey;">-->
+			<div>
+				<a style="padding:32px" name="GettingStarted"></a>
+				<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Getting Started</h4>
+				<p class="col-para">This guide provides information about getting started with Authenion to deploy a secure and scalable platform to enable single sign-on (SSO) to Oracle applications based on the security and industry standards.</p>
+				<a style="padding:32px" name="Introduction"></a>
+				<p class="col-sub-headings"><b>1. Introduction</b></p>
+				<p class="col-para">Authenion enables single sign-on (SSO) solution for Oracle applications. Authenion integrates with standard OpenID Connect providers in the market such as PingFederate, PingOne, Azure, etc., for authentication related events and on the other end, it connects with the Oracle apps to securely transfer the SSO related details to the applications.</p>
+				<img src="assets/img/authenion-intro.png" alt="" class="col-images-intro" /> <br>
 
-<p class="col-para">The reports included in the EIK Splunk app are designed to query against two indexes:</p>
+				<a style="padding:32px" name="Enterprise Deployement Model"></a>
+				<p class="col-sub-headings"><b>2. Enterprise Deployment Model</b></p>
+				<p class="col-para">Authenion supports a Gateway architecture for its protected Oracle applications. In this model, the traffic is initially directed to Authenion. Authenion grants or denies access by redirecting the traffic to Authentication providers.</p>
+				<!-- <ul class="col-para-bulletpoints"> -->
+				<ul style="margin-left:30px;" class="col-para-bulletpoints">
+					<li><p class="col-para-bulletpoints">This deployment model can be set up quickly without disrupting the applications. The Authenion will not be installed on separate servers from the application web servers.</p></li>
+					<li><p class="col-para-bulletpoints">With the fewer component architecture, it is easy to identify issues and troubleshoot. All transactions are logged, and it is easier to view any specific events.</p></li>
+				</ul>
+				<img src="assets/img/deploymentmodel.png" alt="" class="col-images-intro"><br>
 
-<li><p class="col-para-bulletpoints">ebs-eik-error-index : Indexes Error events sent by forwarders.</p></li>
-<li><p class="col-para-bulletpoints">ebs-eik-debug-index : Indexes General EIK transaction events sent by forwarders.</p></li>
+				<a style="padding:32px" name="What can I do with Authenion"></a>
+				<br><p class="col-sub-headings"><b>3. What can I do with Authenion?</b></p>
+				<p class="col-para">Authenion is a light-weight product that allows you to enable a secure Single Sign-On solution for your Oracle Enterprise applications.</p>
+				<p class="col-para">The main functionalities are:</p>
+				<!-- <ul class="col-para-bulletpoints"> -->
+				<ul style="margin-left:30px;" class="col-para-bulletpoints">
+					<li><p class="col-para-bulletpoints">Use Authenion to protect Oracle applications</p></li>
+					<li><p class="col-para-bulletpoints">Connect Authenion with external OpenID Connect providers for authentication</p></li>
+					<li><p class="col-para-bulletpoints">You can manage sessions for the protected applications and use OAuth scopes to send user data to applications</p></li>
+				</ul>
 
-<p class="col-para">Create two indexes with the above names:</p>
 
-<br>
-																																					<img src="assets/img/pf-41.png" alt=""
-																																						class="col-images-intro"/>
-																																					<br>
-																																					<br>
+				<a style="padding:32px" name="How does Authenion work"></a>
+				<p class="col-sub-headings"><b>4. How does Authenion work?</b></p>
+				<p class="col-para">Authenion acts as the gateway to your Oracle Enterprise Applications and capture user requests & delegate it to your Identity Provider (IdP) for authentication.</p>
 
-<p class="col-sub-headings"><b>3. Configure The forwarder to send data to splunk</b></p>
+				<p class="col-sub-headings-sub"><b>Session Initiation</b></p>
+				<!-- <ul class="col-para-bulletpoints"> -->
+				<ul style="margin-left:30px;" class="col-para-bulletpoints">
+					<li><p class="col-para-bulletpoints">Using advanced & secured integration standards, Authenion securely connects with your Identity Provider using OAuth/OIDC protocols. This allows Authenion protected Oracle Applications requests to be delegated to your centralized Identity Provider in your organization.</p></li>
+					<li><p class="col-para-bulletpoints">The Identity Provider will be responsible for challenging the user requests with strong authentication schemes. The Identity Provider will also be responsible for collecting the user attributes and send it to Authenion through OAuth/OIDC tokens for further processing such as session establishment & granting user-access. </p></li>
+				</ul>
+				<img src="assets/img/sessioninitiation.png" alt="" class="col-images-sessionmgmt"><br><br>
 
-<p class="col-para">a. Install the Splunk Universal forwarder on each node running the EIK.</p>
+				<p class="col-sub-headings-sub"><b>Processing Steps</b></p>
+				<ol class="col-para-bulletpoints">
+					<li><p class="col-para-bulletpoints">&nbsp;User request access for Oracle Applications</p></li>
+					<li><p class="col-para-bulletpoints">&nbsp;Authenion checks for the user session, and it redirects the user’s request to IdP for authentication</p></li>
+					<li><p class="col-para-bulletpoints">&nbsp;IdP authenticates the user using the adapters and against a data store configured to it</p></li>
+					<li><p class="col-para-bulletpoints">&nbsp;IdP retrieves the necessary attributes from its configured data store and sends it to Authenion for further processing</p></li>
+					<li><p class="col-para-bulletpoints">&nbsp;Authenion will receive the authenticated user’s attributes and parse the attributes into HTTP-Headers and send it to the target application</p></li>
+					<li><p class="col-para-bulletpoints">&nbsp;Oracle Applications will retrieve & validate the HTTP-Headers from Authenion and grant access to users based on their roles and responsibilities</p></li>
+				</ol>
 
-<p class="col-para">b. Configure the universal forwarder to push the EIK Error and Debug logs to their respective
-	Splunk indexes we created. For detailed installation and configuration instructions, see Splunk	documentation.</p>
 
-<p class="col-para">c. Select Files & Directories as the type for Forwarded Inputs and configure a forwarded input
-	for both indexes and EIK log files.</p>
+				<a style="padding:32px" name="What can I Configure with Authenion"></a>
+				<p class="col-sub-headings"><b>5. What can I Configure with Authenion?</b></p>
+				<p class="col-para">Authenion includes a wide range of configuration features from its user interface (administrative console). The following are the configuration we can perform in Authenion admin console.</p>
 
-																																	
-<!-- ### 4. Using the App ### -->
-<a style="padding:32px" name="4. Using the App"></a>
-<p class="col-sub-headings"><b>4. Using the App</b></p>
-<p class="col-sub-headings"><b>1. View dashboard analytics</b></p>
+				<!-- <div class="div-table">
+		<div class="div-table-row">
+			<div class="div-table-col1">Applications</div>
+			<div class="div-table-col2">Application you are protecting with Authenion</div>
+		</div>
+		<div class="div-table-row">
+			<div class="div-table-col1">OIDC Configurations</div>
+			<div class="div-table-col2">Openid Connect provider / Identity Provider setup</div>
+		</div>
+		<div class="div-table-row">
+			<div class="div-table-col1">Virtual Servers</div>
+			<div class="div-table-col2">Application domain or hostname for a gateway architecture</div>
+		</div>
+		<div class="div-table-row">
+			<div class="div-table-col1">Application Hosts</div>
+			<div class="div-table-col2">Target Applications or backend application server details</div>
+		</div>
+		<div class="div-table-row">
+			<div class="div-table-col1">Resources</div>
+			<div class="div-table-col2">URI components of the protected applications</div>
+		</div>
+		<div class="div-table-row">
+			<div class="div-table-col1">Header Mapping</div>
+			<div class="div-table-col2">HTTP-Headers (user data) that needs to be forwarded to the protected applications</div>
+		</div>
+		<div class="div-table-row">
+			<div class="div-table-col1">Authenion Instance</div>
+			<div class="div-table-col2">Authenion plug-in responsible for transferring the configuration data from UI to authenion server and vice versa. The default port is ‘8090’ & uses ‘https’.</div>
+		</div>
+	</div> -->
 
-<p class="col-para">a. Filtering results by Date and Time Range: Use the Time-Range drop down menu to specify the
-	preferred time range for the log events.</p>
+
+				<table class="systemrequiremetable" cellpadding="5" cellspacing="5" >
+
+					<tr>
+						<th class="symcomponent">Fields</th>
+						<th class="symcomponent">Values</th>
+					</tr>
+
+					<!--Applications-->
+					<tbody class="tbody">
+						<tr>
+							<td>
+								<p>Applications</p>
+							</td>
+
+							<td>
+								<ul>
+									<li class="li">Entry for the protected Oracle applications in Authenion</li>
+
+								</ul>
+							</td>
+
+						</tr>
+						<!--OIDC Configurations-->
+						<tr>
+							<td>
+								<p>OIDC Configurations</p>
+							</td>
+							<td>
+
+								<ul>
+									<li class="li">Your Organization's Identity Provider setup with Authenion for Authentication</li>
+
+								</ul>
+
+							</td>
+						</tr>
+
+						<!--Virtual Servers-->
+						<tr>
+							<td>
+								<p>Virtual Servers</p>
+							</td>
+							<td>
+
+								<ul>
+									<li class="li">Application domain or hostname for a gateway architecture</li>
+								</ul>
+
+							</td>
+						</tr>
+
+						<!--Application Hosts-->
+						<tr>
+							<td>
+								<p>Application Hosts</p>
+							</td>
+							<td>
+
+								<ul>
+									<li class="li">Protected application's server details (Application backend)</li>
+
+								</ul>
+
+							</td>
+						</tr>
+
+						<!--Resources-->
+						<tr>
+							<td>
+								<p>Resources</p>
+							</td>
+							<td>
+
+								<ul>
+									<li class="li">URI components of the protected applications</li>
+
+								</ul>
+
+							</td>
+						</tr>
+						<!--Header Mapping-->
+						<tr>
+							<td>
+								<p>Header Mapping</p>
+							</td>
+							<td>
+
+								<ul>
+									<li class="li">HTTP-Headers containing user data that needs to be forwarded to the protected applications</li>
+
+								</ul>
+
+							</td>
+						</tr>
+
+						<!--Authenion Instance-->
+						<tr>
+							<td>
+								<p>Authenion Instance</p>
+							</td>
+							<td>
+
+								<ul>
+									<li class="li">Authenion plug-in responsible for transferring the configuration data from UI to authenion server and vice versa. The default port is ‘8090’ & uses ‘https’.</li>
+
+								</ul>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+			</div>
+
+        <!-- ### SYSTEM REQUIREMENTS ### -->
+				<div>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">System Requirements</h4>
+					
+					<p class="col-para">The following requirements should be met for Authenion installation. Authenion qualifies & certifies the following configurations that they are compatible with the product. Authenion supports IPv4 addressing. </p>
+					<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5" >
+					
+					  <tr>
+							    <th class="symcomponent">System components</th>
+                                <th class="symcomponent">Requirements</th>
+                    </tr>
+					 
+				 <tbody class="tbody">
+					 <!--Supported Operating Systems--> 
+					 <a style="padding:32px" name="SupportedOS"></a>
+						<tr>
+							<td>
+                                <p>Supported Operating Systems</p>
+                            </td>
+							
+								<td>
+									<ul>
+										<li class="li">Red Hat Enterprise Linux 7 & above</li>
+										<li class="li">CentOS 7 & above</li>
+										<li class="li">Oracle Enterprise Linux 7 & above</li>
+									</ul>
+								</td>
+							
+						</tr>
+                  <!--Linux User requirements in the Authenion Server-->
+				  <a style="padding:32px" name="LinuxUserrequirements"></a>
+						<tr>
+							<td>
+                                <p>Linux User requirements in the Authenion Server</p>
+                            </td>
+							<td>
+								
+									<ul>
+										<li class="li">Create a Linux user in the name of ‘appuser’ to execute Authenion scripts.</li>
+										<li class="li">The 'appuser' should have Read/Write privileges to the Authenion deployment package.</li>
+										<li class="li">Authenion should be installed in the ‘/home/appuser’ directory.</li>
+									</ul>
+								
+							</td>
+						</tr>
+
+					<!--Supported Java environment-->
+					<a style="padding:32px" name="SupportedJavaenvironment"></a>
+					<tr>
+						<td>
+							<p>Supported Java environment</p>
+						</td>
+						<td>
+							
+								<ul>
+									<li class="li">OpenJDK 11</li>
+									<li class="li">Oracle Java SE Development Kit 11 LTS / Oracle Java SE Runtime Environment (Server JRE) 8</li>
+								</ul>
+							
+						</td>
+					</tr>
+
+					<!--Minimum Hardware requirements-->
+					<a style="padding:32px" name="MinimumHR"></a>
+					<tr>
+						<td>
+							<p>Minimum Hardware requirements</p>
+						</td>
+						<td>
+							
+								<ul>
+									<li class="li">2 CPU/Cores recommended</li>
+									<li class="li">4 GB of RAM</li>
+									<li class="li">5 GB available space</li>
+								</ul>
+							
+						</td>
+					</tr>
+
+					<!--Recommended Hardware requirements-->
+						<a style="padding:32px" name="RecommendedHR"></a>
+					<tr>
+						<td>
+							<p>Recommended Hardware requirements</p>
+						</td>
+						<td>
+							
+								<ul>
+									<li class="li">4 CPU/Cores recommended</li>
+									<li class="li">8 GB of RAM</li>
+									<li class="li">25 GB available space</li>
+								</ul>
+							
+						</td>
+					</tr>
+					<!--Port requirements-->
+					<a style="padding:32px" name="PortRequirements"></a>
+					<tr>
+						<td>
+							<p>Default Port requirements</p>
+						</td>
+						<td>
+							
+							<ul>
+								<li class="li">Authenion Sync&emsp;-&emsp;HTTPS,&emsp;TCP - 8090</li>
+								<li class="li">Authenion Virtual Server&emsp;-&emsp;HTTP (or) HTTPS,&emsp;&emsp;TCP - 0 to 65535</li>
+							</ul>
+							
+						</td>
+					</tr>
+				</tbody> 
+				</table>
+				<br>
+				<br>
+				
+				<!-- ### INSTALLATION ### -->
+				<div>
+					<!-- <a name="install-authenion section"></a> -->
+					<a style="padding:32px" name="Installation"></a>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Installation</h4>
+                    <p class="col-para">This section provides instructions for installing, configuring & starting/stopping Authenion product. Authenion can be installed on the Linux servers. For the System requirements, please visit System Requirements section.</p>
+                     <a style="padding:32px" name="pre-reqs section"></a>
+                     <p class="col-sub-headings"><b>1. Pre-requisites</b></p>
+					<!-- <ul class="col-para-bulletpoints"> -->
+						<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Ensure the System Requirements are met</p></li>
+						<li><p class="col-para-bulletpoints">Install a supported Java software with the JAVA_HOME environment variable set</p></li>
+						<li><p class="col-para-bulletpoints">The JAVA_HOME variable must be set representing the location of your Java installation</p></li>
+					
+					</ul>
+
+
+					<!-- INSTALL AUTHENION SECTION -->
+					<a style="padding:32px" name="install-authenion section"></a>
+					<p class="col-sub-headings"><b>2. Install Authenion</b></p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Request or download the authenion-2.0 product distribution zip file and a valid license from the Authenion support portal or by contacting your account manager in LikeMinds.</p></li>
+						<li><p class="col-para-bulletpoints">Install authenion by unzipping the authenion-2.0.zip into the <i>“/home/appuser”</i> directory in the Authenion server.</p></li>
+						<li><p class="col-para-bulletpoints">Authenion file system after extracting.</p></li>
+
+
+						<!-- TABLE2 -->
+						<!-- <div class="div-table2">
+		<div class="div-table2-row">
+			<div class="div-table2-col1">Distribution ZIP file</div>
+			<div class="div-table2-col2">Download & extract the distribution zip into the installation directory <b>‘/home/appuser’</b> in your Linux server</div>
+		</div>
+		<div class="div-table2-row">
+			<div class="div-table2-col1">File system after extraction</div>
+			<div class="div-table2-col2">&lt;authenion_install_dir&gt;:&nbsp;&nbsp;<i>/home/appuser/authenion-2.0/authenion/</i></div>
+		</div>
+		<div class="div-table2-col1">Directory Structure</div>
+		<div class="div-table2-col2">authenion-2.0</div>
+		<div class="div-table2-col2">&emsp;&emsp;- authenion</b></div>
+		<div class="div-table2-col2">&emsp;&emsp;&emsp;&emsp;- bin</div>
+		<div class="div-table2-col2">&emsp;&emsp;&emsp;&emsp;- config</div>
+		<div class="div-table2-col2">&emsp;&emsp;&emsp;&emsp;- deploy</div>
+		<div class="div-table2-col2">&emsp;&emsp;&emsp;&emsp;- logs</div>
+		<div class="div-table2-col2">&emsp;&emsp;&emsp;&emsp;- server</div>
+	</div> -->
+						<!-- install Authenion -->
+						<table class="systemrequiremetable" cellpadding="5" cellspacing="5">
+
+							<tr>
+								<th class="symcomponent"></th>
+								<th class="symcomponent"></th>
+							</tr>
+
+							<!--Applications-->
+							<tbody class="tbody">
+								<tr>
+									<td>
+										<p>Distribution ZIP file</p>
+									</td>
+
+									<td>
+										<ul>
+											<li class="li">Download & extract the distribution zip into the installation directory <b>‘/home/appuser’</li>
+
+										</ul>
+									</td>
+
+								</tr>
+								<!--File system after extraction-->
+								<tr>
+									<td>
+										<p>File system after extraction</p>
+									</td>
+									<td>
+
+										<ul>
+											<li class="li">&lt;authenion_install_dir&gt;:&nbsp;&nbsp;<i>/home/appuser/authenion-2.0/authenion/</i></li>
+
+										</ul>
+
+									</td>
+								</tr>
+
+								<!--Directory Structure-->
+								<tr>
+									<td>
+										<p>Directory Structure</p>
+									</td>
+									<td>
+
+										<ul>
+											<li class="li">authenion-2.0</li>
+											<li class="li" style="margin-left:10px;list-style-type: none"> <b>-</b> authenion</b></li>
+											<li class="li" style="margin-left:30px;list-style-type: none"> <b>-</b> bin</li>
+											<li class="li" style="margin-left:30px;list-style-type: none"> <b>-</b> config</li>
+											<li class="li" style="margin-left:30px;list-style-type: none"> <b>-</b> deploy</li>
+											<li class="li" style="margin-left:30px;list-style-type: none"> <b>-</b> logs</li>
+											<li class="li" style="margin-left:30px;list-style-type: none"> <b>-</b> server</li>
+										</ul>
+
+									</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+						<br>
+
+						<li><p class="col-para-bulletpoints">Copy the obtained license file <i>“authenion.lic”</i> to the Authenion server and place it in the <i>&lt;authenion_install_dir&gt;/config</i> directory.</p></li>
+					</ol>
+
+
+					<!-- SETUP SECTION -->
+					<a style="padding:32px" name="setup section"></a>
+					<p class="col-sub-headings"><b>3. Setup Authenion</b></p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Navigate to the following directory in the Authenion server.</li>
+						<!-- TABLE3 -->
+						<div class="div-table3">
+							<div class="div-table3-row">
+								<div class="div-table3-col">#]&emsp;&lt;authenion_install_dir&gt;/bin</div>
+							</div>
+						</div>
+						<br>
+						<li><p class="col-para-bulletpoints">Execute the following command to grant permission.</li>
+						<div class="div-table3">
+							<div class="div-table3-row">
+								<div class="div-table3-col">#]&emsp;chmod +x *</div>
+							</div>
+						</div>
+						<br>
+						<li><p class="col-para-bulletpoints">Run the setup command.</li>
+						<div class="div-table3">
+							<div class="div-table3-row">
+								<div class="div-table3-col">#]&emsp;./setup.sh</div>
+							</div>
+						</div>
+						<br>
+						<li><p class="col-para-bulletpoints">Read and accept the Software Terms & Conditions. This will complete the setup process.</li>
+						<p class="col-para-notes"><i> Note: In case if the process fails to complete the setup, you can re-run the setup script to complete it</i></p>
+					</ol>
+
+
+					<!-- START/STOP SECTION -->
+					<a style="padding:32px" name="start-stop section"></a>
+					<p class="col-sub-headings"><b>4. Start & Stop Services</b></p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">To Start the Authenion instance, navigate to the <i>“&lt;authenion_install_dir&gt;/bin”</i> directory and run the <i>‘start-instance.sh’</i> command. </li>
+						<!-- TABLE3 -->
+						<div class="div-tables3">
+							<div  class="div-table3-row1">
+								<div  class="div-table3-col">#]&emsp;cd &lt;authenion_install_dir&gt;/bin</div>
+								<div  class="div-table3-col">#]&emsp;./start-instance.sh</div>
+							</div>
+						</div>
+						<br>
+						<li><p class="col-para-bulletpoints">To Stop the Authenion instance, run the <i>‘stop-instance.sh’</i> command. </li>
+						<div class="div-tables3">
+							<div class="div-table3-row1">
+								<div  class="div-table3-col">#]&emsp;cd &lt;authenion_install_dir&gt;/bin</div>
+								<div  class="div-table3-col">#]&emsp;./stop-instance.sh</div>
+							</div>
+						</div>
+						<br>
+						<li><p class="col-para-bulletpoints">Check the status of the Authenion application by executing the <i>‘status.sh’</i> command. </li>
+					</ol>
+
+
+					<a style="padding:32px" name="health-check section"></a>
+					<p class="col-sub-headings"><b>5. Authenion Health-check</b></p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">To check the Authenion status through heartbeat URL, enter the following URL in the browser. This can be used for monitoring the Authenion services.<p></li>
+					</ol>
+					<!-- TABLE3 -->
+					<div class="div-table3">
+						<div class="div-table3-row">
+							<div style="width: 470px" class="div-table3-col">https://&lt;authenion-virtualserver:port&gt;/ssolibrary/oidc/heartbeat</div>
+						</div>
+					</div>
+					<br>
+
+
+					<a style="padding:32px" name="idp-cert section"></a>
+					<p class="col-sub-headings"><b>6. Install Identity Provider’s Certificate into Authenion Trust Store</b></p>
+					<p class="col-para">The following steps will guide you to import the Identity provider’s certificate (PingFederate) into the Authenion trust store.</p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Export the SSL Certificate from the Identity Provider (PingFederate, PingOne, AzureAD, etc.,) and place the certificate anywhere inside “&lt;authenion_install_dir&gt;” in the Authenion server.<p></li>
+						<li><p class="col-para-bulletpoints">Run the following command in the Authenion server to install the Identity Provider’s certificate<p></li>
+					</ol>
+					<!-- TABLE3 -->
+					<div class="div-table3">
+						<div class="div-table3-row">
+							<div style="width: 460px" class="div-table3-col">./keytool -import -alias &lt;alias_name&gt; -keystore &lt;/path-to-java-cacerts&gt; -file &lt;/path-to-IdentityProvider-cert&gt;</div>
+						</div>
+					</div>
+					<br>
+
+					<a style="padding:32px" - name="ssl-cert section"></a>
+					<p class="col-sub-headings"><b>7. Install SSL Certificates for Authenion (optional)</b></p>
+					<p class="col-para">Authenion allows you to install your organization’s signed certificates. The certificates should be in the .crt & .key files format. To place your organization’s cert in Authenion, follow the steps below.</p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">If you have the certificate & private key in pkcs format, move the certificate to the Authenion server & run the following commands.<p></li>
+						<!-- TABLE3 -->
+						<div class="div-tables3">
+							<div class="div-table3-row1">
+								<div class="div-table3-col"><u>To extract .crt :</u></div>
+								<div class="div-table3-col">openssl pkcs12 -in ./myorgcert.p12 -clcerts -nokeys -out server.crt</div><br><br>
+							</div>
+							<div class="div-table3-row1">
+								<div class="div-table3-col"><u>To extract .key :</u></div>
+								<div class="div-table3-col">openssl pkcs12 -in ./myorgcert.p12 -nocerts -nodes -out server.key</div>
+							</div>
+						</div>
+						<br>
+						<li><p class="col-para-bulletpoints">Copy the .crt & .key extracted in the previous step and place it in “&lt;authenion_install_dir&gt;/server/conf/certs” directory.<p></li>
+						<li><p class="col-para-bulletpoints">The above steps can be repeated during the Authenion certificate renewal process.<p></li>
+							<p class="col-para-notes"><i> Note: This setup is optional. The Certificates can also be installed on a load-balancer servers</i></p>	
+					</ol>
+					<br>
+				</div> <!-- ### INSTALLATION ### -->
+				<!-- ### UI & NAVIGATION ### -->
+				<div>
+					<!-- <a name="install-authenion section"></a> -->
+					<a style="padding: 35px" name="Console Navigation & Configurations"></a>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Console Navigation & Configurations</h4>
+					<p class="col-para">This section describes the UI of Authenion (Admin Console) and its navigation and provides steps for accessing and configuring it. Access the Authenion UI by clicking <a href="https://launch.authenion.com">Administrative Consle</a></p>
+
+
+					<a style="padding: 35px" name="Applications / Dashboard page"></a>
+					<p class="col-sub-headings"><b>1. Dashboard / Applications page</b></p>
+					<p class="col-para">The  Dashboard / Applications page lets you view, create, or modify the applications we protect. The total protected applications will be displayed in the Dashboard Application’s tab. It also lets you access the OIDC Configuration page next to the Applications tab and access the sidebar menu for other required configurations.</p>
+
+					<img  src="assets/img/Dashboard.png" alt="" class="col-images-intro" /> <br>
+
+						<!-- <br><br> -->
+
+
+						<a style="padding: 35px" name="Getting config-data into the UI"></a>
+						<p class="col-sub-headings"><b>2. Import - Getting config-data into the UI</b></p>
+						<p class="col-para">The Import button in the Dashboard page lets you get the data into the UI.</p>
+
+						  <img  src="assets/img/import1.png" alt="" class="col-images-intro" /> <br>
+
+							<p class="col-para">The Import page has two operations:</p>
+							<ol class="col-para-bulletpoints">
+								<li><p class="col-para-bulletpoints"><u>Fetch Function:</u>&emsp;The Fetch function is used to get the data from your Authenion Server. It automatically retrieves all the Authenion config data and makes it available in the Authenion UI. It uses the Authenion Instance plugin running in the Authenion server.<p></li>
+								<li><p class="col-para-bulletpoints"><u>Upload:</u>&emsp;The Upload operation is used to load the data from your local file system into the UI manually through any previously extracted configs.<p></li>
+							</ol>
+							<!-- <br><br> -->
+
+							<p class="col-sub-headings-sub"><b>Retrieving Config data from existing Authenion Instance</b></p>
+							<ol class="col-para-bulletpoints">
+								<li><p class="col-para-bulletpoints">For first time installation & configuration of Authenion, skip this step and continue with the next section –  <a href="#OIDC Configuration"><b>OIDC Configuration</b></a>.</p></li>
+								<li><p class="col-para-bulletpoints">If you have Authenion server up & running  already, you can bring the configuration data into the UI through the <b>Import function</b>.</p></li>
+								<li><p class="col-para-bulletpoints">Click Import in the Authenion Dashboard.</p></li>
+								<li><p class="col-para-bulletpoints">In the Import page, enter the detail for <b>Authenion Instance</b>. For example, <i>authenion.example.com</i></p></li>
+								<li><p class="col-para-bulletpoints">Click Import.</p></li>
+								<li><p class="col-para-bulletpoints">This will bring your Authenion configuration data from authenion server to the UI.</p></li>
+							</ol>
+
+
+							<a style="padding: 35px" name="OIDC Configuration"></a>
+							<p class="col-sub-headings"><b>3. OIDC Configuration</b></p>
+							<p class="col-para">The OIDC configuration page allows you to connect with your Identity Provider / OIDC Token Provider. This configuration includes details such as Token Providers OAuth/OIDC endpoints, Authenion Client registration details, Claims to get from the Token Provider. It includes additional configuration for Authenion such as Authenion Instance, Domain & Session duration configurations.</p>
+
+							<img src="assets/img/OIDC Configuration.png" alt="" class="col-images-intro" /> <br>
+
+								<p class="col-sub-headings-sub"><b>Adding OIDC Configuration</b></p>
+								<ol class="col-para-bulletpoints">
+									<li><p class="col-para-bulletpoints">Click OIDC Configuration in the Dashboard page.</p></li>
+									<li><p class="col-para-bulletpoints">Enter the following details & click Save to configure your Token Provider with Authenion for authentication.</b>.</p></li>
+
+									<ul class="col-para-bulletpoints">
+										<li><p class="col-sub-headings-sub"><b><u>OpenID Connect Provider - Settings</u></b></p></li>
+
+										<!-- <div class="div-table4">
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Authorization URL</div>
+												<div class="div-table4-col2">https://idp-example.com/authorize</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Token URL</div>
+												<div class="div-table4-col2">https://idp-example.com/token</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Logout URL</div>
+												<div class="div-table4-col2">https://idp-example.com/idp/logout</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">JWKS URL</div>
+												<div class="div-table4-col2">https://idp-example.com/jwks</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Issuer</div>
+												<div class="div-table4-col2">https://idp-example.com</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Userinfo URL</div>
+												<div class="div-table4-col2">https://idp-example.com/idp/userinfo</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Audience</div>
+												<div class="div-table4-col2">authenion</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Client ID</div>
+												<div class="div-table4-col2">&lt;Registered value client_id from your IdP&gt;</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Client Secret</div>
+												<div class="div-table4-col2">&lt;Registered client_secret value from your IdP&gt;</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Scope</div>
+												<div class="div-table4-col2">openid (Multiple scopes can be added)</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Claims</div>
+												<div class="div-table4-col2">Claims from Identity Provider (sub, username, email, etc.,)</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Authenion Instances</div>
+												<div class="div-table4-col2">
+													https://&lt;authenion.example.com&gt;:8090
+													<p style="font-size:0.6rem; color:black"><i><br>Note: If the Authenion is configured in cluster, enter the Authenion Instances value from all the Authenion servers. The default port is 8090 and enabled with HTTPS. Supports multiple entries.</i></p>
+												</div>
+											</div> -->
+
+										<!-- </div> -->
+										<!-- install Authenion -->
+					                 <table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+						               <tr>
+							       	   <th class="symcomponent" >Fields</th>
+						     		    <th class="symcomponent">Values</th>
+					                   </tr>
+				
+				                       <tbody class="tbody">
+										<!--Authorization URL-->  
+					                  	  <tr>
+							                <td>
+												<li style="list-style-type: none;position:indent;">Authorization URL</li>
+							                </td>
+							                 <td>
+									           <ul>
+										         <li class="li" style="list-style-type: none">https://idp-example.com/authorize</li>
+										       </ul>
+								           </td>
+						               </tr>
+					                      <!--Token URL-->  
+						                <tr>
+							               <td>
+											<li style="list-style-type: none;position:indent;">Token URL</li>
+							              </td>
+							               <td>
+									        <ul>
+										      <li class="li" style="list-style-type: none">https://idp-example.com/token</li>
+									        </ul>
+								          </td>
+						                </tr>
+										 <!--JWKS URL-->  
+										 <tr>
+											<td>
+											  <li style="list-style-type: none">JWKS URL</li>
+										   </td>
+											<td>
+											 <ul>
+											   <li class="li" style="list-style-type: none">https://idp-example.com/jwks</li>
+											 </ul>
+										   </td>
+										 </tr>
+                                           <!--Logout URL-->  
+						                 <tr>
+							               <td>
+								            <li style="list-style-type: none;position:indent;">Logout URL</li>
+							                </td>
+							                 <td>
+									            <ul>
+										           <li class="li" style="list-style-type: none">https://idp-example.com/idp/logout</li>
+								               </ul>
+								             </td>
+						                 </tr>
+					                    <!--Issuer-->  
+					                	<tr>
+				                         <td>
+											<li style="list-style-type: none;position:indent;">Issuer</li>
+							            </td>
+							              <td>
+									       <ul>
+										       <li class="li" style="list-style-type: none">https://idp-example.com</li>
+				                        	</ul>
+								          </td>
+						               </tr>
+						              <!--Userinfo URL-->  
+						               <tr>
+							              <td>
+											<li style="list-style-type: none;position:indent;">Userinfo URL</li>
+							              </td>
+							               <td>
+									            <ul>
+										           <li class="li" style="list-style-type: none">https://idp-example.com/idp/userinfo</li>
+								            	</ul>
+								          </td>
+						                </tr>
+							          <!--Audience-->  
+						                   <tr>
+							                 <td>
+												<li style="list-style-type: none;position:indent;">Audience</li>
+					                           </td>
+							                    <td>
+								                   	<ul>
+								                  		<li class="li" style="list-style-type: none">authenion</li>
+								                	</ul>
+							                	</td>
+						                    </tr>
+					                  <!--Client ID-->  
+						                     <tr>
+							                     <td>
+													<li style="list-style-type: none;position:indent;">Client ID</li>
+							                    </td>
+							                       <td>
+									                 <ul>
+										               <li class="li" style="list-style-type: none">Registered value client_id from your IdP</li>
+								                      </ul>
+								                    </td>
+						                          </tr>
+					                    <!--Client Secret-->  
+					                                <tr>
+					                                	<td>
+															<li style="list-style-type: none;position:indent;">Client Secret</li>
+					                                 	</td>
+						                                 <td>
+								                          <ul>
+									                        <li class="li" style="list-style-type: none">Registered client_secret value from your IdP</li>
+							                              </ul>
+							                            </td>
+					                                </tr>
+					                 	<!--Scope-->  
+						                   <tr>
+							                   <td>
+												<li style="list-style-type: none;position:indent;">Scope</li>
+
+							                   </td>
+							                   <td>
+									             <ul>
+										           <li class="li" style="list-style-type: none">openid (Multiple scopes can be added)</li>
+								                   </ul>
+								               </td>
+						                     </tr>
+							            <!--Claims-->  
+						                   <tr>
+							                    <td>
+								                    <li style="list-style-type: none;position:indent;">Claims</li>
+							                     </td>
+							                      <td>
+									                <ul>
+										             <li class="li" style="list-style-type: none">Claims from Identity Provider (sub, username, email, etc.,)</li>
+								                     </ul>
+								                </td>
+						                      </tr>
+								         <!--Authenion Instances-->  
+						                      <tr>
+							                    <td>
+								                   
+												   <li style="margin-top:-37px;list-style-type: none;position:indent;">Authenion Instances</li>
+							                     </td>
+							                         <td>
+									                    <ul>
+										                  <li class="li" style="list-style-type: none;margin-top:10px;">https://authenion.example.com:8090</li>
+										               
+															<li class="li" style="list-style-type: none;font-size:12px;max-width:500px;background-color:#f5f5f6;"><i><b>Note:</b> If the Authenion is configured in cluster, enter the <b>Authenion Instances</b> value from all the Authenion servers. The default port is 8090 and enabled with HTTPS. Supports multiple entries.</i>
+															</ul>
+								                       </td>
+													   
+													  
+													   </li>
+													
+						                        </tr>
+				                       </tbody> 
+				                     </table>
+										<br>
+										<br>
+
+										<li><p class="col-sub-headings-sub"><b><u>Cookie Settings</u></b></p></li>
+										<!-- <div class="div-table4">
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Cookie Domain</div>
+												<div class="div-table4-col2">.example.com</div>
+											</div>
+											<div class="div-table4-row">
+												<div class="div-table4-col1">Session Duration</div>
+												<div class="div-table4-col2">3600</div>
+											</div>
+										</div> -->
+										<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+											<tr>
+												<th class="symcomponent">Fields</th>
+											  <th class="symcomponent">Values</th>
+											</tr>
+					 
+											<tbody class="tbody">
+												<!--Cookie Domain-->  
+												<tr>
+													<td>
+														<li style="list-style-type: none;position:indent;padding-right:30px">Cookie Domain</li>
+													 </td>
+													  <td>
+														<ul>
+														 <li class="li" style="list-style-type: none">example.com</li>
+														 </ul>
+													</td>
+												  </tr>
+											 <!--Session Duration-->  
+												  <tr>
+													<td>
+														<li style="list-style-type: none;position:indent;">Session Duration</li>
+													 </td>
+														 <td>
+															<ul>
+															  <li class="li" style="list-style-type: none">3600</li>
+															</ul>
+														   </td>
+													</tr>
+										   </tbody> 
+										 </table>
+							
+				                </div> <!-- ### UI & NAVIGATION ### -->
+								<br>
+								<img src="assets/img/OIDCConfiguration1.png" alt="" class="col-images-intro" /> <br>
+				             <!-- Sidebar-->
+							 <div>
+								<a style="padding: 35px" name="Sidebar"></a>
+							       <p class="col-sub-headings"><b>4. Sidebar</b></p>
+							        <p class="col-para">The Sidebar Menu has the following Configurations</p>
+							         <ul style="margin-left:30px;" class="col-para-bulletpoints">
+								      <li><p class="col-para-bulletpoints">Applications</p></li>
+								      <li><p class="col-para-bulletpoints">Virtal Servers</p></li>
+								      <li><p class="col-para-bulletpoints">Application Hosts</p></li>
+								      <li><p class="col-para-bulletpoints">Header Mappings</p></li>
+								      <li><p class="col-para-bulletpoints">Resources</p></li>
+								      <li><p class="col-para-bulletpoints">Authenion Status</p></li>
+								      <li><p class="col-para-bulletpoints">Sync</p></li>
+								      <li><p class="col-para-bulletpoints">Export</p></li>
+							       </ul>
+								   <img style="margin-left:85px" src="assets/img/sidebar.png" alt="" class="col-images-intro" /> <br>
+						     </div>
+							
+								
+
+							<!-- Applications -->
+							<div>
+								<a style="padding: 35px" name="Applications"></a>
+							       <p class="col-sub-headings"><b>5. Applications</b></p>
+							        <p class="col-para">Applications represent the protected Oracle applications to which the user requests are sent. Each application will have a
+										dedicated entry in the Dashboard/Applications tab. Applications are configured with Virtual Servers, Resources, Header
+										Mappings & corresponds to a single Application Host (target application/backend server). Applications in Authenion can
+										be configured with both protected and unprotected (excluded) resources. Authentication requirements will be set for the
+										protected resources in an application</p>
+										<img src="assets/img/Dashboard.png" alt="" class="col-images-intro" /> <br>
+										<h6 style="font-size: 15px;color: #4e4f50;">
+											Adding an Application
+										</h6>
+										<p class="col-para">
+											Adding a protected application in Authenion has the following pre-requisites. Complete the setup for the below
+											configurations before you create a new application. 
+										</p>
+							         <!-- <ul class="col-para-bulletpoints"> -->
+										<ul style="margin-left:30px;" class="col-para-bulletpoints">
+								      <li><p class="col-para-bulletpoints">Virtual Servers
+										                                  <a href="#Virtual Servers"> (Section 6)</a>
+										   </p></li>
+								      <li><p class="col-para-bulletpoints">Application Hosts 
+										                                  <a href="#Application Hosts">(Section 7)</a>
+								            </p></li>
+								      <li><p class="col-para-bulletpoints">Header Mapping 
+										                                   <a href="#Header Mapping">(Section 8)</a>
+											</p></li>
+								      <li><p class="col-para-bulletpoints">Resources
+										                                   <a href="#Resources">(Section 9)</a>
+											</p></li>
+								    </ul>
+									<ol class="col-para-bulletpoints">
+										<li><p class="col-para-bulletpoints">To add an application, click <b>New Application</b> in the Dashboard page.</p></li>
+										<li><p class="col-para-bulletpoints">Enter the following details: </p></li>
+									</p>
+									<br>
+
+									<!-- table ### -->
+									<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+										<tr>
+										   <th class="symcomponent" >System component</th>
+										  <th class="symcomponent">Requirements</th>
+										</tr>
+				 
+										<tbody class="tbody">
+										 <!--Application ID-->  
+										 <tr>
+											<td>
+											   <p>Application ID</p>
+										   </td>
+											  <td>
+												<ul>
+												  <li class="li">1 (Unique ID)</li>
+												 </ul>
+											   </td>
+											 </tr>
+									   <!--Application name -->  
+											  <tr>
+												  <td>
+													 <p>Application name </p>
+												 </td>
+													<td>
+													  <ul>
+														<li class="li">Oracle </li>
+													   </ul>
+													 </td>
+												   </tr>
+										 <!--Virtual Servers -->  
+													 <tr>
+														 <td>
+														 <p>Virtual Servers </p>
+														  </td>
+														  <td>
+														   <ul>
+															 <li class="li">ApexVirtualServer&emsp;&emsp;(Virtual Server configured in <a href="#Virtual Servers"> Section 6 </a>)</li>
+														   </ul>
+														 </td>
+													 </tr>
+										  <!--Header Mapping  -->  
+										  <tr>
+											<td>
+											<p>Header Mapping  </p>
+											 </td>
+											 <td>
+											  <ul>
+												<li class="li">ApexHeaders &emsp;&emsp;&emsp;&emsp;(Header Mapping configured <a href="#Header Mapping">Section 8</a>)</li>
+											  </ul>
+											</td>
+										</tr>
+										<!--Protected Resource -->  
+										<tr>
+											<td>
+											<p>Protected Resource </p>
+											 </td>
+											 <td>
+											  <ul>
+												<li class="li">ApexResources     &emsp;&emsp;&emsp;(Protected Resource configured <a href="#Resources">Section 9</a>)</li>
+											  </ul>
+											</td>
+										</tr>
+										<!--Excluded Resource  -->  
+										<tr>
+											<td>
+											<p>Excluded Resource  </p>
+											 </td>
+											 <td>
+											  <ul>
+												<li class="li">UnprotectdResource&emsp;(Excluded Resource configured <a href="#Resources">Section 9</a>)</li>
+											  </ul>
+											</td>
+										</tr>
+										<!--Application Host -->  
+										<tr>
+											<td>
+											<p>Application Host </p>
+											 </td>
+											 <td>
+											  <ul>
+												<li class="li">ApexBackend&emsp;&emsp;&emsp;&emsp;(Application Host configured <a href="#Application Hosts">Section 7</a>)</li>
+											  </ul>
+											</td>
+										</tr>
+										<!--Authenion Instances -->  
+										<tr>
+											<td>
+											<p>Authenion Instances </p>
+											 </td>
+											 <td>
+											  <ul>
+												<li class="li">https://authenion.example.com:8090&emsp;&emsp;&emsp;(auto populated)
+												</li>
+											  </ul>
+											</td>
+										</tr>
+									</tbody> 
+								 </table>
+									<br />
+									<li><p class="col-para-bulletpoints">Click <b>Save</b> to complete the configuration for a new application. </p></li>
+									<img src="assets/img/NewApplication.png" alt="" class="col-images-intro" /> <br>
+							<p>Authenion Dashboard shows the number of Applications configured. </p>
+							<img src="assets/img/NewApplication1.png" alt="" class="col-images-intro" /> <br>
+								</div>
+								
+
+							<!-- Virtual Servers  -->	
+                            <div>
+								<a style="padding: 35px" name="Virtual Servers"></a>
+							       <p class="col-sub-headings"><b>6. Virtual Servers</b></p>
+							        <p class="col-para">Virtual Servers enables you to protect multiple applications and their hosts. The Virtual Server is a combination of
+										hostname and port number and is defined by example.com:443.</p>
+										<img src="assets/img/Virtualserver.png" alt="" class="col-images-intro" /> <br>
+										<h6 style="font-size: 15px;">
+											Adding a Virtual Server
+
+										</h6>
+									<ol class="col-para-bulletpoints">
+										<li><p class="col-para-bulletpoints">Click Virtual Servers in the sidebar menu.</p></li>
+										<li><p class="col-para-bulletpoints">Click the <b>“+ New Virtual Server”</b> button in the Virtual Servers page. </p></li>
+										<li><p class="col-para-bulletpoints">Enter the following details to create a Virtual Server for your application.  </p></li>
+										<p class="col-para-bulletpoints"><b>For example:</b></p>
+									</p>
+									<!-- table ### -->
+									<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+										<tr>
+										   <th class="symcomponent" >System component</th>
+										  <th class="symcomponent">Requirements</th>
+										</tr>
+				 
+										<tbody class="tbody">
+										 <!-- ID-->  
+										 <tr>
+											<td>
+											   <p>ID </p>
+										   </td>
+											  <td>
+												<ul>
+												  <li class="li">1 (Unique ID) </li>
+												 </ul>
+											   </td>
+											 </tr>
+									   <!--Name-->  
+											  <tr>
+												  <td>
+													 <p>Name</p>
+												 </td>
+													<td>
+													  <ul>
+														<li class="li">ApexVirtualServer</li>
+													   </ul>
+													 </td>
+												   </tr>
+										 <!--Host -->  
+													 <tr>
+														 <td>
+														 <p>Host </p>
+														  </td>
+														  <td>
+														   <ul>
+															 <li class="li">authenion.example.com&emsp;&emsp;(protected application domain or hostname)</li>
+														   </ul>
+														 </td>
+													 </tr>
+										  <!--Port  -->  
+										             <tr>
+											           <td>
+											            <p>Port </p>
+											            </td>
+											            <td>
+											               <ul>
+												              <li class="li">443</li>
+											             </ul>
+											          </td>
+										              </tr>
+										<!--Use SSL-->  
+										             <tr>
+											            <td>
+											               <p>Use SSL </p>
+											             </td>
+											                 <td>
+											                <ul>
+												             <li class="li">checkbox&emsp;&emsp;&emsp;(HTTP or HTTPS)</li>
+											                 </ul>
+											              </td>
+										                 </tr>	
+									</tbody> 
+								 </table>
+									<br />
+									
+									<li><p class="col-para-bulletpoints">Click <b>Save</b> to complete the Virtual Server configuration. </p></li>
+									<br><img src="assets/img/Virtualserver1.png" alt="" class="col-images-intro" /> <br>
+								</div>
+								
+
+								<!-- Application Hosts -->	
+								<div>
+									<a style="padding: 35px" name="Application Hosts"></a>
+									   <p class="col-sub-headings"><b>7. Application Hosts </b><p>
+										<p class="col-para">Applications Hosts are the target applications or the backend application servers that Authenion is protecting through a
+											gateway architecture. These target application’s access requests are validated by Authenion before they are forwarded. </p>
+											<img src="assets/img/BackendServer.png" alt="" class="col-images-intro" /> <br>
+											<h6 style="font-size: 15px;">
+												Adding Application Hosts
+                                             </h6>
+										<ol class="col-para-bulletpoints">
+											<li><p class="col-para-bulletpoints">Click Application Hosts in the sidebar menu. </p></li>
+											<li><p class="col-para-bulletpoints">Click the <b>“+New Application Host”</b> button in the Application Hosts page. </p></li>
+											<li><p class="col-para-bulletpoints">Enter the following details to create an Application Host for your target application server  </p></li>
+											<p class="col-para-bulletpoints"><b>For example:</b></p>
+										</p>
+										<!-- table ### -->
+										<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+											<tr>
+											   <th class="symcomponent" >System component</th>
+											  <th class="symcomponent">Requirements</th>
+											</tr>
+					 
+											<tbody class="tbody">
+											 <!-- ID-->  
+											 <tr>
+												<td>
+												   <p>ID </p>
+											   </td>
+												  <td>
+													<ul>
+													  <li class="li">1 (Unique ID) </li>
+													 </ul>
+												   </td>
+												 </tr>
+										   <!--Name-->  
+												  <tr>
+													  <td>
+														 <p>Name</p>
+													 </td>
+														<td>
+														  <ul>
+															<li class="li">ApexBackend </li>
+														   </ul>
+														 </td>
+													   </tr>
+											 <!--Host -->  
+														 <tr>
+															 <td>
+															 <p>Host </p>
+															  </td>
+															  <td>
+															   <ul>
+																 <li class="li">apex.example.com:8443 &emsp;&emsp;(protected application/webserver details)</li>
+															   </ul>
+															 </td>
+														 </tr>
+											<!--Use SSL-->  
+														 <tr>
+															<td>
+															   <p>Use SSL </p>
+															 </td>
+																 <td>
+																<ul>
+																 <li class="li">checkbox&emsp;&emsp;&emsp;(HTTP or HTTPS)</li>
+																 </ul>
+															  </td>
+															 </tr>	
+										</tbody> 
+									 </table>
+										<br />
+										<li><p class="col-para-bulletpoints">Click <b>Save</b> to complete the Application Host configuration.
+										</p></li>
+										<img src="assets/img/Backendserver1.png" alt="" class="col-images-intro" /> <br>
+									</div>
+									
+								
+									<!-- Header Mappings  -->	
+								<div>
+									<a style="padding: 35px" name="Header Mapping"></a>
+									   <p class="col-sub-headings"><b>8. Header Mappings </b></p>
+										<p class="col-para">Header Mappings sends the User attributes to the target application post authentication. The target application will use
+											them for validation purposes. The Header Mappings will receive the user attributes from the Claims which are sent by the
+											Token Provider. Once the claims received, it is then made available as HTTP-Headers to the target applications. </p>
+											<img src="assets/img/HeaderMappings.png" alt="" class="col-images-intro" /> <br>
+											<h6 style="font-size: 15px;">
+												Adding Header Mapping 
+                                             </h6>
+										<ol class="col-para-bulletpoints">
+											<li><p class="col-para-bulletpoints">Click Header Mappings in the sidebar menu.  </p></li>
+											<li><p class="col-para-bulletpoints">Click the <b>“+New Header Mapping”</b> button in the Header Mappings page.  </p></li>
+											<li><p class="col-para-bulletpoints">Enter the following details to create a header mapping for your target application.   </p></li>
+											<p class="col-para-bulletpoints"><b>For example:</b></p>
+										</p>
+										<!-- table ### -->
+										<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+											<tr>
+												<th class="symcomponent">System components&nbsp;&nbsp;&emsp;&emsp;</th>
+												<th class="symcomponent">Requirements&nbsp;&emsp;&emsp;&emsp;&emsp;</th>
+											</tr>
+					 
+											<tbody class="tbody">
+											 <!-- ID-->  
+											 <tr>
+												<td>
+												   <p>ID </p>
+											   </td>
+												  <td>
+													<ul>
+													  <li class="li">1 (Unique ID) </li>
+													 </ul>
+												   </td>
+												 </tr>
+										   <!--Name-->  
+												  <tr>
+													  <td>
+														 <p>Name</p>
+													 </td>
+														<td>
+														  <ul>
+															<li class="li">ApexHeaders</li>
+														   </ul>
+														 </td>
+													   </tr>
+											 <!--App Header -->  
+														 <tr>
+															 <td>
+															 <p><b>App Header </b></p>
+															  </td>
+															  <td>
+															   <ul>
+																 <p><b>OIDC Claims </b></p>
+															   </ul>
+															 </td>
+														 </tr>
+											<!--USER_NAME-->  
+														 <tr>
+															<td>
+															   <p>USER_NAME</p>
+															 </td>
+																 <td>
+																<ul>
+																 <li class="li">username</li>
+																 </ul>
+															  </td>
+															 </tr>	
+															 <!--USER_MAIL -->  
+														 <tr>
+															<td>
+															   <p>USER_MAIL </p>
+															 </td>
+																 <td>
+																<ul>
+																 <li class="li">email</li>
+																 </ul>
+															  </td>
+															 </tr>	
+										</tbody> 
+									 </table>
+										<br />
+										<li><p class="col-para-bulletpoints">Click <b>Save</b> to complete the Header Mappings  configuration. 
+										</p></li>
+										<img src="assets/img/Headermappings1.png" alt="" class="col-images-intro" /> <br>
+									</div>
+									
+									
+								<!-- Resources  -->	
+								<div>
+									<a style="padding: 35px" name="Resources"></a>
+									   <p class="col-sub-headings"><b>9. Resources </b></p>
+										<p class="col-para">Resources are the components/URI of the applications. The resources can be mapped as either protected or excluded
+											resources in an application. Each application should have at least one protected & excluded resources configured to it. </p>
+											<img src="assets/img/Resources.png" alt="" class="col-images-intro" /> <br>
+											<h6 style="font-size: 15px;">
+												Adding Resources
+                                             </h6>
+										<ol class="col-para-bulletpoints">
+											<li><p class="col-para-bulletpoints">Click Resources in the sidebar menu.   </p></li>
+											<li><p class="col-para-bulletpoints">Click the <b>“+New Resource”</b> button in the Resources page.  </p></li>
+											<li><p class="col-para-bulletpoints">Enter the following details to create a Resources for your target application.    </p></li>
+											<p class="col-para-bulletpoints"><b>For example:</b></p>
+										</p>
+										<!-- table ### -->
+										<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+											<tr>
+											   <th class="symcomponent" >System component</th>
+											  <th class="symcomponent">Requirements</th>
+											</tr>
+					 
+											<tbody class="tbody">
+											 <!-- ID-->  
+											 <tr>
+												<td>
+												   <p>ID </p>
+											   </td>
+												  <td>
+													<ul>
+													  <li class="li">1 (Unique ID) </li>
+													 </ul>
+												   </td>
+												 </tr>
+										   <!--Name-->  
+												  <tr>
+													  <td>
+														 <p>Name</p>
+													 </td>
+														<td>
+														  <ul>
+															<li class="li">ApexResources</li>
+														   </ul>
+														 </td>
+													   </tr>
+											 <!--Resource Path -->  
+														 <tr>
+															 <td>
+															 <p>Resource Path</p>
+															  </td>
+															  <td>
+															   <ul>
+																 <li class="li">/apex&emsp;(Resource Path starts with a ‘/’. Multiple resource paths can be added)</Resource> </li>
+															   </ul>
+															 </td>
+														 </tr>
+											</tbody> 
+									 </table>
+										<br />
+										<li><p class="col-para-bulletpoints">Click <b>Save</b> to complete the Resources configuration. 
+										</p></li>
+										<img src="assets/img/Resources1.png" alt="" class="col-images-intro" /> <br>
+									</div>
+									
+
+							<!--Authenion Status -->	
+								<div>
+									<a style="padding: 35px" name="Authenion Status"></a>
+									   <p class="col-sub-headings"><b>10. Authenion Status </b></p>
+										<p class="col-para">The Authenion Status page shows the health of the Authenion Instance that is running in the Authenion server. This
+status page also displays your authenion license information. </p>
+											<ol class="col-para-bulletpoints">
+												<li><p class="col-para-bulletpoints">Click Authenion Status in the sidebar menu to view the status of your Authenion application.  </p></li>	
+												<img src="assets/img/authenionstatus.png" alt="" class="col-images-intro" /> <br>
+											</div>
+											
+
+							<!--Export -->	
+								<div>
+									<a style="padding: 35px" name="Export"></a>
+									   <p class="col-sub-headings"><b>11. Export </b></p>
+										<p class="col-para">The Export button is a quick operation that lets you download the current configurations from the UI. The exported data
+											will be in the format of a JSON file. This file acts as a backup for the Authenion configuration data. The downloaded file
+											name is export.json. </p>
+										</div>
+											
+
+							<!--Sync  -->	
+								<div>
+									<a style="padding: 35px" name="Sync"></a>
+									   <p class="col-sub-headings"><b>12. Sync</b></p>
+										<p class="col-para">The Sync is a manual operation lets you push all the configuration data from Authenion UI back to the Authenion server.
+											When you install Authenion for the first time, there will be no configuration data in the UI or in the Authenion server. The
+											Sync operation should be triggered for both new configurations & modifications that we perform in the Authenion UI. Any
+											changes which are not pushed from the UI to Authenion server will not be reflected until Sync operation is triggered
+											manually.  </p>
+											<img style="margin-left:55px;" src="assets/img/sync.png" alt="" class="col-images-intro" /> <br>
+											<p class="col-para">
+												The Sync status will throw error status when it couldn’t reach the Authenion instance in Authenion server. 	
+											</p>	
+									    	<img style="margin-left:55px;" src="assets/img/sync1.png" alt="" class="col-images-intro" /> <br>
+											</div>
+                                           <br>
+			<br />
+				
+				<!-- ### CONFIGURE IDENTITY PROVIDER ### -->
+				<div>
+					<a  style="padding: 38px" name="Configure your Identity Provider"></a>
+					<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Configure your Identity Provider</h4>
+					
+					<p class="col-para">This section provides the steps required to configure Authenion with the Identity/Token Providers like PingFederate, PingOne, Microsoft Azure, etc. The integration will be established through OAuth and OpenID Connect protocols.</p>
+
+					<!--PingFederate as IdP-->
+					<a style="padding: 38px" name="PingFederate as the Token Provider"></a>
+					<p class="col-sub-headings"><b>1. PingFederate as the Token Provider</b></p>
+					<p class="col-sub-headings-sub"><b>&nbsp;&nbsp;<u>Pre-requisites</u></b></p>
+					<!-- <ul class="col-para-bulletpoints"> -->
+						<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">PingFederate application with IdP and OAuth/OIDC roles enabled</p></li>
+						<li><p class="col-para-bulletpoints">Authorization server setup in PingFederate OAuth server setting</p></li>
+						<li><p class="col-para-bulletpoints">A configured ping IdP adapter and/or authentication policy contract policy if required for authentication and grant mapping</p></li>
+					</ul>
+					<p class="col-sub-headings-sub"><b>&nbsp;&nbsp;<u>OAuth / OIDC Configurations</u></b></p>
+					<p class="col-para">This setup will manage the configurations and policy information related to OAuth client which is Authenion in our case.</p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Create a new Client in PingFederate for Authenion.</p></li>
+
+						<!-- <div class="div-table4">
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Client Name</div>
+								<div class="div-table4-col2">&lt;value to identify Client in PingFederate&gt;</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Client ID</div>
+								<div class="div-table4-col2">&lt;value for client_id&gt;</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Client Secret</div>
+								<div class="div-table4-col2">&lt;value for client_secret&gt;</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Redirect URIs</div>
+								<div class="div-table4-col2">https://&lt;authenion.example.com&gt;:&lt;port&gt;/ssolibrary/oidc/callback</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Bypass Authorization Approval</div>
+								<div class="div-table4-col2">&lt;enable checkbox&gt;</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Allowed Grant types</div>
+								<div class="div-table4-col2">&lt;enable <b>Authorization Code</b>checkbox&gt;</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">Default Access token manager</div>
+								<div class="div-table4-col2">&lt;select the accesstoken to map with this client&gt;</div>
+							</div>
+							<div class="div-table4-row">
+								<div class="div-table4-col1">OpenID Connect Policy</div>
+								<div class="div-table4-col2">&lt;select the OpenID Connect policy created earlier&gt;</div>
+							</div>
+						</div> -->
+						<table class="systemrequiremetable" cellpadding = "5" cellspacing = "5">
+							<tr>
+							   <th class="symcomponent" >System component</th>
+							  <th class="symcomponent">Requirements</th>
+							</tr>
+	 
+							<tbody class="tbody">
+							 <!--Client Name-->  
+							 <tr>
+								<td>
+								   <p>Client Name</p>
+							   </td>
+								  <td>
+									<ul>
+									  <li class="li">value to identify Client in PingFederate</li>
+									 </ul>
+								   </td>
+								 </tr>
+						   <!--Client ID-->  
+								  <tr>
+									  <td>
+										 <p>Client ID</p>
+									 </td>
+										<td>
+										  <ul>
+											<li class="li">value for client_id</li>
+										   </ul>
+										 </td>
+									   </tr>
+							 <!--Client Secret-->  
+										 <tr>
+											 <td>
+											 <p>Client Secret</p>
+											  </td>
+											  <td>
+											   <ul>
+												 <li class="li">value for client_secret</li>
+											   </ul>
+											 </td>
+										 </tr>
+							  <!--Redirect URIs-->  
+								<tr>
+									<td>
+									  <p>Redirect URIs</p>
+									</td>
+									<td>
+									  <ul>
+										<li class="li">https://&lt;authenion.example.com&gt;:&lt;port&gt;/ssolibrary/oidc/callback</li>
+										</ul>
+									</td>
+								  </tr>
+							 <!--Bypass Authorization Approval-->  
+								<tr>
+									 <td>
+										 <p>Bypass Authorization Approval</p>
+									  </td>
+									   <td>
+										 <ul>
+										  <li class="li">enable checkbox</li>
+										  </ul>
+									 </td>
+								   </tr>
+							  <!--Allowed Grant types-->  
+								<tr>
+									<td>
+										<p>Allowed Grant types</p>
+									 </td>
+									  <td>
+										<ul>
+										 <li class="li">enable Authorization Code checkbox</li>
+										 </ul>
+									</td>
+								  </tr>
+								  <!--Default Access token manager-->  
+								<tr>
+									<td>
+										<p>Default Access token manager</p>
+									 </td>
+									  <td>
+										<ul>
+										 <li class="li">select the accesstoken to map with this client</li>
+										 </ul>
+									</td>
+								  </tr>
+								  <!--OpenID Connect Policy-->  
+								<tr>
+									<td>
+										<p>OpenID Connect Policy</p>
+									 </td>
+									  <td>
+										<ul>
+										 <li class="li">select the OpenID Connect policy created earlier</li>
+										 </ul>
+									</td>
+								  </tr>
+							</tbody> 
+						  </table>
+						<br />
+
+						<li><p class="col-para-bulletpoints">Review the Client configurations and click <b>Save</b>.</p></li>
+						<li><p class="col-para-bulletpoints">Map an OpenID Connect Policy to this Client with the following information:</p></li>
+						<p class="col-para-bulletpoints"><b>For example:</b></p>
+						<p class="col-para-bulletpoints">In OpenID Connect Policy Management tab, create/modify the policy and add the attributes that need to be sent through id_token and userinfo endpoint.</p>
+						<p class="col-para-bulletpoints">Add the following attributesthat need to be returned in the id_token and/or as claims through userinfo endpoint.</p>
+						<!-- <ul class="col-para-bulletpoints"> -->
+							<ul style="margin-left:30px;" class="col-para-bulletpoints">
+							<li>username</li>
+							<li>email</li>
+						</ul>
+						<br />
+						<p class="col-para-bulletpoints">The above attributes can be mapped with their respective Scopes in the next page. For example, <b>openid scope</b></p>
+						<br />
+
+						<li><p class="col-para-bulletpoints">Replicate the configurations if PingFederate is configured in a cluster.</p></li>
+					</ol>
+
+					<img src="assets/img/pf-client1.png" alt="" class="col-images-pf"><br />
+					<img src="assets/img/pf-client2.png" alt="" class="col-images-pf"><br />
+					<br />
+
+					<!--Azure as idP-->
+					<a style="padding: 38px" name="Microsoft Azure Active Directory as the Token Provider"></a>
+					<p class="col-sub-headings"><b>2. Microsoft Azure Active Directory as the Token Provider</b></p>
+					<p class="col-sub-headings-sub"><b>&nbsp;&nbsp;<u>Pre-requisites</u></b></p>
+					<!-- <ul class="col-para-bulletpoints"> -->
+						<ul style="margin-left:30px;" class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">Azure account with valid subscription</p></li>
+						<li><p class="col-para-bulletpoints">App registration</p></li>
+						<li><p class="col-para-bulletpoints">Client Secrets and Claim mappings</p></li>
+					</ul>
+					<p class="col-sub-headings-sub"><b>&nbsp;&nbsp;<u>Azure Configurations</u></b></p>
+					<p class="col-para">The following will register Authenion as an OAuth/OIDC client application in Microsoft Azure & establishes a unidirectional trust relationship between Authenion and Microsoft identity platform.</p>
+					<ol class="col-para-bulletpoints">
+						<li><p class="col-para-bulletpoints">In the Azure Portal, switch to the tenant in which you want to register the Authenion application.</p></li>
+						<li><p class="col-para-bulletpoints">In the App registrations section, select New registration and register Authenion as web application with display name and any other required details.</p></li>
+						<li><p class="col-para-bulletpoints">Add the following Authenion URI in the Redirect URI field. This is the location where Microsoft Azure redirects the user’s request post authentication.</p></li>
+						<p class="col-para-bulletpoints"><b>Redirect URI:</b>&emsp;https://&lt;authenion.example.com&gt;/ssolibrary/oidc/callback</p>
+						<img src="assets/img/azure-1.png" alt="" class="col-images-pf">
+						<br />
+
+						<li><p class="col-para-bulletpoints">When the registration finishes, the Azure portal displays the Authenion application registration’s overview pane. You can find the Application ID which will also be used as the client_id when we connect Authenion & Azure through OAuth/OIDC.</p></li>
+						<li><p class="col-para-bulletpoints">You need to Credential in ‘Certificates & Secrets’ page. This acts as the client credential for the Authenion application, and it allows Authenion to authenticate as itself to Microsoft Azure.</p></li>
+						<img src="assets/img/azure-2.png" alt="" class="col-images-pf"><br />
+						<br />
+
+						<li><p class="col-para-bulletpoints">The Authenion client application need to access resources in a web API. You can use the Microsoft Azure platform for authorizing scopes, permissions-based access to fetch the appropriate user data.</p></li>
+						<li><p class="col-para-bulletpoints">The user data can be added as claims using the OIDC userinfo endpoint. Any attributes that are required by the target application can ab added as claims in the userinfo endpoint.</p></li>
+					</ol><br />
+
+
+<!-- ### Introduction ### -->
+<div>
+	<!-- <a name="install-authenion section"></a> -->
+	<a style="padding:32px" name="Introduction"></a>
+	<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">Introduction</h4>
+	<p class="col-para">The EBS product includes adapters and integration kits that simplify integrations with Identity Stores as well as Applications. The Oracle EBS solution uses these capabilities to enable Single Sign-On. The EBS INTEGRATION KIT (EIK) from LikeMinds Consulting provides a simple deployment path to enable single sign-on (SSO) to Oracle E-Business Suite
+	</p>
+	 <a style="padding:32px" name="pre-reqs section"></a>
+	</ul>
 
 
 	<br>
-	<img src="assets/img/pf-42.png" alt=""
-		class="col-images-intro"/>
+	<img src="assets/img/pg-2.png" alt=""
+	class="col-images-intro"/>
 	<br>
 	<br>
 
-	<p class="col-para">b. Drill Down into the results: Click on each result to view the events in detail for more
-		information.</p>
+<!-- ### How does the EBS kit work ### -->
+<div>
+	<!-- <a name="install-authenion section"></a> -->
+	<a style="padding:32px" name="How does the EBS kit work"></a>
+	<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">How does the EBS kit work</h4>
+	<p class="col-para">The EBS Integration Kit is a light-weight java application which can be deployed in a jetty-container which eliminates the need for dedicated server/hardware. The EIK is OpenID Connect Compliant as a resource server and can be configured  to receive Authentication and Authorization tokens. The EBS Integration Kit communicates with the Oracle E-Business Suite Database for Session creation and optional user-provisioning if required.</p>
+	
+	 <a style="padding:32px" name="pre-reqs section"></a>
+	</ul>
 
-		<br>
-		<img src="assets/img/pf-43.png" alt=""
-			class="col-images-intro"/>
-		<br>
-		<br>
+	<br>
+	<img src="assets/img/pg-1.png" alt=""
+	class="col-images-intro"/>
+	<br>
+	<br>
 
-		<p class="col-sub-headings"><b>2. Download Dashboard Analytics as PDF reports</b></p>
-
-		<br>
-		<img src="assets/img/pf-44.png" alt=""
-			class="col-images-intro"/>
-		<br>
-		<br>
-
-		<br>
-		<img src="assets/img/pf-45.png" alt=""
-			class="col-images-intro"/>
-		<br>
-		<br>
-
-		<p class="col-para">Feel free to reach out to the EIK Support team for more information.
-			Thank you!</p>
+<!-- ### System Requirments ### -->
+<div>
+	<!-- <a name="install-authenion section"></a> -->
+	<a style="padding:32px" name="System Requirments"></a>
+	<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">System Requirments</h4>
 
 
+	<br>
+	<img src="assets/img/pg-3.png" alt=""
+	class="col-images-intro"/>
+	<br>
+	<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- ### provisioning Capabilities ### -->
+<div>
+	<!-- <a name="install-authenion section"></a> -->
+	<h4 style="font-family: ABCWhyte Bold, sans-serif; font-size:26px; font-weight: 600;">provisioning Capabilities</h4>
+</ul>
+<a style="padding:32px" name="provisioning Capabilities"></a>
+<p class="col-sub-headings"><b>EBS Integration Kit creates user records to Oracle EBS application's user store.</b></p>
+<ul style="margin-left:30px;" class="col-para-bulletpoints">
+	<li><p class="col-para-bulletpoints">Create user record in the FND_USER table</p></li>
+	<li><p class="col-para-bulletpoints">No Roles will be assigned as part of the provisioning</p></li>
+	<li><p class="col-para-bulletpoints">Management of roles,password resets and any application functionalities will not be controlled by EIK</p></li>
+	<li><p class="col-para-bulletpoints">Default password will be set as part of the provisioning</p></li>	
 
 
 
@@ -1540,62 +2257,58 @@
 
 
 
-																																</ul>
-																															</td>
-
-																														</tr>
-
-
-
-																													</tbody>
-																												</table>
-																												<br>
 
 
 
 
-																											</div><!--Configure identity provider-->
 
 
 
-																										</div> <!-- end #div  418-->
-																									</div> <!-- end #div 417-->
 
 
-																								</section><!-- End #section -->
-																							</main><!-- End #main -->
 
-																							<!-- ======= Footer ======= -->
-																							<footer id="footer" class="footer">
-																								<div class="copyright">
-																									&copy; Copyright <strong><span>LikeMinds Consulting
-																											Inc</span></strong>. All Rights received
-																								</div>
-																							</footer><!-- End Footer -->
 
-																							<a href="#" class="back-to-top d-flex
-																								align-items-center justify-content-center">
-																								<i class="bi bi-arrow-up-short"></i></a>
 
-																							<!-- Vendor JS Files -->
-																							<script
-																								src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-																							<script
-																								src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-																							<script src="assets/vendor/chart.js/chart.umd.js"></script>
-																							<script src="assets/vendor/echarts/echarts.min.js"></script>
-																							<script src="assets/vendor/quill/quill.min.js"></script>
-																							<script
-																								src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-																							<script src="assets/vendor/tinymce/tinymce.min.js"></script>
-																							<script
-																								src="assets/vendor/php-email-form/validate.js"></script>
-																							<!-- Template Main JS File -->
-																							<script src="assets/js/main.js"></script>
 
-																						</body>
 
-																					</html>
 
-                                       
-																					
+
+
+
+</div><!--Configure identity provider-->
+
+
+
+				</div> <!-- end #div  418-->
+			</div> <!-- end #div 417-->
+			
+
+</section><!-- End #section -->
+</main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>LikeMinds Consulting Inc</span></strong>. All Rights Reserved
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+	<i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
